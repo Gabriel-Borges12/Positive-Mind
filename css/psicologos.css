@@ -1,32 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, sans-serif;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #86BAA0;
+    color: #fff;
+}
+
+.estrutura-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    margin-right: 10px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif; /* Definindo a fonte 'Inter' para o título */
+    margin-top: 60px; /* Adicionando espaço entre a navbar e o título */
+    margin-left: 70px;
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 90px; /* Ajustando a margem esquerda */
+    font-size: medium;
+    display: inline-block; /* Deixando o h4 na mesma linha */
+}
+
+
+
+/* Estilo para os containers */
+.container-wrapper {
+    display: flex;
+    justify-content: center; /* Centraliza os containers na horizontal */
+}
+
+.container {
+    width: 150px; /* Largura dos containers */
+    height: 150px; /* Altura dos containers */
+    background-color: #86BAA0;
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+    margin-top: 20px; /* Espaço entre os containers e o h4 */
+    margin-right: 20px; /* Espaço entre os containers */
+    padding: 20px;
+    align-items: center;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+h3 {
+    margin-top: 90px;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Estilo para o logo */
-.navbar .logo {
-    float: left;
-    margin-right: 20px;
+/* Estilo para a primeira parte do texto */
+.first-part {
+    color: #000000;
 }
 
-/* Estilo para o texto de boas-vindas */
-.navbar .welcome {
-    float: right;
-    padding: 14px 20px;
-    color: #f2f2f2;
+/* Estilo para a segunda parte do texto */
+.second-part {
+    color: #86BAA0;
 }
