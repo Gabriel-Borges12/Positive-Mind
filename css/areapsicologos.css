@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+body {
+    background-color: hsl(0, 0%, 100%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #86BAA0;
+    color: #fff;
+}
+
+.estrutura-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.bem-vindo {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 90px; 
+    margin-left: 100px; 
+}
+
+.informacao{
+    text-align: left;
+    font-size: 18px ;
+    margin-top: 50px;
+    margin-left:100px ;
+}
+
+.container {
+    margin-left: 250px;
+    margin-top: 100px;
+    background-color: #86BAA0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 350px; /* Aumentando a largura para 350px */
+    max-width: 100%; 
+    height: auto; 
+}
+.informacao {
+    cursor: pointer; 
+    font-size: 18px;
+}
+#conteudo {
+    margin-top: 10px;
+}
+
+.imagem {
+    width: 250px; /* Ajuste o tamanho conforme necessário */
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* Posiciona a partir do centro vertical */
+    left: 80%; /* Posiciona a partir do centro horizontal */
+    transform: translate(-60%, -60%); /* Move a imagem de volta metade de sua própria largura e altura */
+}
