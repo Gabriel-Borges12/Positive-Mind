@@ -34,14 +34,14 @@ include 'conexao.php';
     <div class="frasetrocando" style="display: inline_block">
         <h2 id="animacao-aqui">Pode parecer que você está sozinho, mas isso não é verdade.</h2>
     </div>
-    
+
     <script>
-        function typeWrite(elemento){
+        function typeWrite(elemento) {
             const textoArray = elemento.innerHTML.split('');
             elemento.innerHTML = '';
-            textoArray.forEach((letra, i) =>{
+            textoArray.forEach((letra, i) => {
                 setTimeout(() => elemento.innerHTML += letra, 75 * i)
-        });
+            });
         }
 
         const titulo = document.querySelector('h2');
