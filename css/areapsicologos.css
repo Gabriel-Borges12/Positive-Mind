@@ -53,24 +53,28 @@ body {
 .informacao{
     text-align: left;
     font-size: 18px ;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left:100px ;
 }
 
 .container {
-    margin-left: 250px;
-    margin-top: 100px;
-    background-color: #86BAA0;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    width: 350px; /* Aumentando a largura para 350px */
-    max-width: 100%; 
-    height: auto; 
+    .container {
+        margin-top: 50px; /* Reduzindo a margem superior */
+        margin-left: auto; /* Centralizando horizontalmente */
+        margin-right: auto; /* Centralizando horizontalmente */
+        background-color: #86BAA0;
+        padding: 10px;
+        border-radius: 10px;
+        width: 250px; /* Ajustando a largura */
+        max-width: 100%;
+        height: auto;
+    }
 }
 .informacao {
-    cursor: pointer; 
-    font-size: 18px;
+    text-align: center; /* Alinha o texto no centro */
+    cursor: pointer; /* Adiciona cursor ao texto */
+    font-size: 18px; /* Define o tamanho da fonte */
+    margin-top: -20px; /* Adiciona espaço acima do texto */
 }
 #conteudo {
     margin-top: 10px;
@@ -82,4 +86,23 @@ body {
     top: 50%; /* Posiciona a partir do centro vertical */
     left: 80%; /* Posiciona a partir do centro horizontal */
     transform: translate(-60%, -60%); /* Move a imagem de volta metade de sua própria largura e altura */
+}
+a{
+    text-decoration: none;
+}
+
+.container-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-top: 250px; /* Adiciona margem superior maior */
+    margin-bottom: 50px; /* Adiciona margem inferior */
+    background-color: #86BAA0; /* Cor de fundo do container */
+    padding: 65px; /* Adiciona um espaçamento interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+.container-icons img {
+    width: 70px; /* Ajusta a largura dos ícones */
+    height: auto; /* Altura automática para manter a proporção */
+    margin: 0 15px; /* Adiciona um espaçamento horizontal entre os ícones */
 }
