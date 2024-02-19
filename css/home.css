@@ -63,7 +63,7 @@ a {
 }
 
 .conteudo {
-    margin-left: 120px;
+    margin-left: 180px;
     margin-top: 90px;
 }
 
@@ -72,7 +72,7 @@ a {
     height: 450px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 200px;
-    margin-left: 190px;
+    margin-left: 160px;
 }
 
 .icones {
@@ -80,18 +80,22 @@ a {
     margin-top: 40px;
 }
 
-h2::after{
+h3::after {
     content: "|";
     margin-left: 5px;
     opacity: 1;
     animation: pisca .7s infinite;
+    color:#1C5739;
 }
 
 @keyframes pisca {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
 }
@@ -101,9 +105,10 @@ h2::after{
     height: 1px;
     background-color: #333;
     margin: 10px 0;
-  }
+}
+
 .grid-areas {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     width: 300px;
 }
@@ -113,7 +118,25 @@ h2::after{
     flex-direction: column;
 }
 
-.psicologos{
+.psicologos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comunidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.motivacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre {
     display: flex;
     align-items: center;
     justify-content: center;

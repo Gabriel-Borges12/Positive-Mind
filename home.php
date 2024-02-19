@@ -10,6 +10,7 @@ include 'conexao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="icon" href=" ./img/icone-cerebro.png">
     <title>Início</title>
 </head>
 
@@ -32,7 +33,7 @@ include 'conexao.php';
     </div>
 
     <div class="frasetrocando" style="display: inline_block">
-        <h2 id="animacao-aqui">Pode parecer que você está sozinho, mas isso não é verdade.</h2>
+        <h3 id="animacao-aqui">Pode parecer que você está sozinho, mas isso não é verdade.</h3>
     </div>
 
     <script>
@@ -44,7 +45,7 @@ include 'conexao.php';
             });
         }
 
-        const titulo = document.querySelector('h2');
+        const titulo = document.querySelector('h3');
         typeWrite(titulo);
     </script>
 
@@ -58,7 +59,7 @@ include 'conexao.php';
         <div class="psicologos">
             <div class="icone-botao">
                 <img class="icones" src="img/iconpsicologo.png">
-                <button class="button-grid">Acessar</button>
+                <button href="#" class="button-grid">Acessar</button>
             </div>
             <div class="grid-areas">
                 <h3> Psicólogos</h3>
@@ -76,16 +77,24 @@ include 'conexao.php';
             </div>
         </div>
         <div class="motivacao">
-            <img class="icones" src="img/iconmotivation.png">
-            <h3>Motivação do dia</h3>
-            <p>Frases diárias para aumentar o astral.</p>
-            <button class="button-grid">Acessar</button>
+            <div class="icone-botao">
+                <img class="icones" src="img/iconmotivation.png">
+                <button class="button-grid">Acessar</button>
+            </div>
+            <div class="grid-areas">
+                <h3>Motivação do dia</h3>
+                <p>Frases diárias para aumentar o astral.</p>
+            </div>
         </div>
         <div class="sobre">
-            <img class="icones" src="img/icontranstornomental.jpg">
-            <h3>Sobre</h3>
-            <p>Entenda mais sobre os transtornos mentais.</p>
-            <button class="button-grid">Acessar</button>
+            <div class="icone-botao">
+                <img class="icones" src="img/icontranstornomental.jpg">
+                <button class="button-grid">Acessar</button>
+            </div>
+            <div class="grid-areas">
+                <h3>Sobre</h3>
+                <p>Entenda mais sobre os transtornos mentais.</p>
+            </div>
         </div>
     </div>
 
