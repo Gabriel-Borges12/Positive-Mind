@@ -25,6 +25,7 @@ include 'conexao.php';
         </span>
 
         <a href="comunidade.php" class="nav-home">Comunidade</a>
+        <a href="sobreEmpresa.php" class="nav-home">Quem somos?</a>
         <a href="logout.php" class="nav-home">Sair</a>
     </header>
 
