@@ -120,7 +120,7 @@ include 'conexao.php';
                     <li><a href="index.php" title="Página Inícial">Página Inícial</a></li>
                     <li><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></li>
                     <li><a href="comunidade.php" title="Comunidade">Comunidade</a></li>
-                    <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
+                    <li><a href="fale_conosco1.php" title="Fale Conosco">Fale Conosco</a></li>
 
                 </ul>
 

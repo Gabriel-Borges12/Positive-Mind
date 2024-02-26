@@ -19,6 +19,12 @@ body {
     justify-content: space-around;
 }
 
+#contato {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
 .column {
     width: 100%;
     padding: 0.5em 0;
@@ -91,6 +97,7 @@ h1 {
     color: inherit;
     font-size: 1.4em;
 }
+
 
 .card:hover {
     background: linear-gradient(#86BAA0, #1C5739);

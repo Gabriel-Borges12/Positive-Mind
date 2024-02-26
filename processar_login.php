@@ -3,11 +3,11 @@ session_start();
 include 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $email = $_POST['usuario_email'];
+    $senha = $_POST['usuario_senha'];
 
 
-    $sql = "SELECT * FROM usuario WHERE usuario_email = ?";
+    $sql = "SELECT * FROM usuarios WHERE usuario_email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
