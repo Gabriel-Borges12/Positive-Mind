@@ -52,7 +52,7 @@
 
                 <p class="text">
                   Esqueceu sua senha?
-                  <a href="redefinir.html">Obtenha ajuda</a> para redefinir sua senha
+                  <a href="redefinirsenha.php">Obtenha ajuda</a> para redefinir sua senha
                 </p>
               </div>
             </form>
@@ -116,9 +116,9 @@
 
           <div class="carousel">
             <div class="images-wrapper">
-              <img src="./img/image1.png" class="image img-1 show" alt="" />
-              <img src="./img/image2.png" class="image img-2" alt="" />
-              <img src="./img/image3.png" class="image img-3" alt="" />
+              <img src="./img/page1.png" class="image img-1 show" alt="" />
+              <img src="./img/page2.png" class="image img-2" alt="" />
+              <img src="./img/page3.png" class="image img-3" alt="" />
             </div>
 
             <div class="text-slider">
