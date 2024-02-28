@@ -18,7 +18,7 @@ include 'conexao.php';
     <header class="navbar">
         <div class="estrutura-logo">
             <img src="img/logopadrao.png" alt="Logo" class="logo">
-            <span class="nome-empresa">POSITIVE MIND</span>
+            <!-- <span class="nome-empresa">POSITIVE MIND</span> -->
         </div>
         <span class="nav-usuario">Bem-vindo (a),
             <?php echo $_SESSION['usuario_nome']; ?>
