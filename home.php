@@ -2,7 +2,7 @@
 session_start();
 include 'conexao.php';
 
-$nome = $_SESSION['usuario_nome']
+// $nome = $_SESSION['usuario_nome']
 ?>
 
 <!DOCTYPE html>
