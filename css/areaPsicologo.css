@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+body {
+    background-color: hsl(0, 0%, 100%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    background-color: #86BAA0;
+    color: #fff;
+}
+
+.estrutura-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.paragrafos {
+    padding: 20px; 
+}
+#bem-vindo {
+    margin-left: 20px; 
+    margin-bottom: 10px;
+    text-decoration:underline;
+    margin-top: 12px;
+}
+#funcao {
+    margin-left:150px; 
+    margin-bottom: 0px; 
+    margin-top: 40px;
+}
+.imagem {
+    width: 300px; 
+    position: absolute; 
+    top: 50%; 
+    left: 80%; 
+    transform: translate(-60%, -60%); 
+    margin-top: 3%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    justify-content: flex-end;
+    margin-left: 70px;
+}
+#links{
+    margin-left: 50%;
+    justify-content: center;
+}
+.container1{
+margin-top: 3%;
+}
+#cerebro{
+    height: 50px;
+    margin-left: 10px;
+}
+#align{
+    display: flex;
+    align-items: center;
+}
+
+.continfo {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #86BAA0;
+}
+.informacao {
+    cursor: pointer;
+}
+
+#conteudo {
+    display: none;
+    padding: 25px;
+    background-color: #86BAA0;
+    max-width: 40%;
+    border-radius: 15px;
+    margin-left: 15%;
+    
+}
+#conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    text-size-adjust: 5px;
+}
+#container2{
+    background-color: #86BAA0; /* Cor de fundo do container2 */
+    padding: 100px;
+    margin: 300px auto;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.iconpsic{
+    height: 130px;
+}
+

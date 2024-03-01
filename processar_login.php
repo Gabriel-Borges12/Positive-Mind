@@ -3,6 +3,7 @@ session_start();
 include 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $user = $_POST['user'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
