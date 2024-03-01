@@ -3,11 +3,11 @@ session_start();
 include 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['usuario_email'];
+    $email = $_POST['usuario_nome'];
     $senha = $_POST['usuario_senha'];
 
 
-    $sql = "SELECT * FROM usuarios WHERE usuario_email = ?";
+    $sql = "SELECT * FROM usuarios WHERE usuario_nome = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['usuario_nome'] = $linha['usuario_nome'];
             $_SESSION['usuario_logado'] = true;
             $_SESSION['usuario_id'] = $linha['usuario_id'];
-            $_SESSION['usuario_email'] = $linha['usuario_email'];
+            $_SESSION['usuario_nome'] = $linha['usuario_'];
             $_SESSION['usuario_senha'] = $linha['usuario_senha'];
             header('Location: home.php');
             exit();

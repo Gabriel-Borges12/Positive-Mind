@@ -1,6 +1,8 @@
 <?php
 session_start();
 include 'conexao.php';
+
+$nome = $_SESSION['usuario_nome']
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +22,7 @@ include 'conexao.php';
             <img src="img/logopadrao.png" alt="Logo" class="logo">
             <!-- <span class="nome-empresa">POSITIVE MIND</span> -->
         </div>
-        <span class="nav-usuario">Bem-vindo (a),
-            <?php echo $_SESSION['usuario_nome']; ?>
-        </span>
+        <span class="nav-usuario">Bem-vindo (a),<?php echo $nome ?></span>
 
         <a href="comunidade.php" class="nav-home">Comunidade</a>
         <a href="sobreEmpresa.php" class="nav-home">Quem somos?</a>
