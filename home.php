@@ -1,6 +1,8 @@
 <?php
 session_start();
 include 'conexao.php';
+
+$nome = $_SESSION['usuario_nome']
 ?>
 
 <!DOCTYPE html>
@@ -18,13 +20,12 @@ include 'conexao.php';
     <header class="navbar">
         <div class="estrutura-logo">
             <img src="img/logopadrao.png" alt="Logo" class="logo">
-            <span class="nome-empresa">POSITIVE MIND</span>
+            <!-- <span class="nome-empresa">POSITIVE MIND</span> -->
         </div>
-        <span class="nav-usuario">Bem-vindo (a),
-            <?php echo $_SESSION['usuario_nome']; ?>
-        </span>
+        <span class="nav-usuario">Bem-vindo (a),<?php echo $nome ?></span>
 
         <a href="comunidade.php" class="nav-home">Comunidade</a>
+        <a href="sobreEmpresa.php" class="nav-home">Quem somos?</a>
         <a href="logout.php" class="nav-home">Sair</a>
     </header>
 
@@ -119,7 +120,7 @@ include 'conexao.php';
                     <li><a href="index.php" title="Página Inícial">Página Inícial</a></li>
                     <li><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></li>
                     <li><a href="comunidade.php" title="Comunidade">Comunidade</a></li>
-                    <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
+                    <li><a href="fale_conosco1.php" title="Fale Conosco">Fale Conosco</a></li>
 
                 </ul>
 
