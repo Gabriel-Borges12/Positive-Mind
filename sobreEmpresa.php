@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href=" ./img/icone-cerebro.png">
     <style>
         body,
         h1,
@@ -30,7 +31,7 @@
 <body>
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="home.php" class="w3-bar-item w3-button w3-wide">POSITIVE MIND</a>
+            <a href="index.php" class="w3-bar-item w3-button w3-wide">POSITIVE MIND</a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
                 <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
@@ -257,7 +258,7 @@
                     <li><a href="index.php" title="Página Inícial">Página Inícial</a></li>
                     <li><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></li>
                     <li><a href="comunidade.php" title="Comunidade">Comunidade</a></li>
-                    <li><a href="fale_conosco1" title="Fale Conosco">Fale Conosco</a></li>
+                    <li><a href="fale_conosco1.php" title="Fale Conosco">Fale Conosco</a></li>
 
                 </ul>
 
