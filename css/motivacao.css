@@ -1,3 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #86BAA0;
+    color: #fff;
+}
+
+.estrutura-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.nome-empresa {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.container-frases {
+    background-color: #f4f4f4; /* Cinza claro */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif; /* Fonte da frase */
+    color: #333; /* Cor do texto */
+    width: 450px; /* Tamanho do quadrado */
+    height: 450px; /* Tamanho do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#endireitar{
+    margin-left: 95px;
+    margin-top: 55px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.frase-do-dia {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px; /* Reduzindo um pouco o tamanho da fonte */
+    color: #333;
+    margin-bottom: 10px; /* Adicionando um espaço inferior */
+    margin-top: 50px;
+    text-decoration:underline;
+}
+a{
+    text-decoration:none ;
+    color:#262626;
+}
+
+/* Responsivo - Ajuste de margem para dispositivos menores */
+@media (max-width: 768px) {
+    .container-frase-do-dia {
+        max-width: 90%; /* Ajustando a largura para 90% em telas menores */
+    }
+}
+
 .custom-shape-divider-bottom-1683068753 {
     float: left;
     width: 100%;
