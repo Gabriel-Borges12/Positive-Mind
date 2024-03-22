@@ -35,9 +35,11 @@
         <a href="pagina_de_ajuda.html" class="second-part">Clique aqui para buscar ajuda.</a>
     </h3>
 
-    <h4>Faça sua pesquisa:</h4>
+   <div id="botaao" >
+    <h4>Qual transtorno você gostaria de conhecer mais:</h4>
 <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
 <button onclick="performSearch()">Pesquisar</button>
+</div>
 
 <div id="searchResults"></div>
 
