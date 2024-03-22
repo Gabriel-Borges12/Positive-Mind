@@ -45,9 +45,11 @@ body {
 }
 
 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     text-decoration: none;
-    justify-content: justify;
 }
 
 .banner {
@@ -143,6 +145,9 @@ h3::after {
 }
 
 .button-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #86BAA0;
     border-style: none;
     border-radius: 10px;

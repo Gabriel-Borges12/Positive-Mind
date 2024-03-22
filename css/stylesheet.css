@@ -96,7 +96,15 @@ body {
 container {
 background-color: #1C5739;
 }
-
+#somosNos {
+    margin-right: 20px;
+}
+.nav-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
 .navbar {
     height: 80px;
     display: flex;

@@ -16,7 +16,7 @@
             <!-- <span class="nome-empresa">POSITIVE MIND</span> -->
         </div>
         <div class="navSpace">
-            <a href="sobreEmpresa.php" class="nav-home">Quem somos?</a>
+            <a href="sobreEmpresa.php" id="somosNos" class="nav-home">Quem somos?</a>
             <a href="login.php" class="nav-home">Entrar</a>
         </div>
     </header>

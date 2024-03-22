@@ -2,7 +2,7 @@
 session_start();
 include 'conexao.php';
 
-// $nome = $_SESSION['usuario_nome']
+$nome = $_SESSION['usuario_nome'];
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ include 'conexao.php';
             <img src="img/logopadrao.png" alt="Logo" class="logo">
             <!-- <span class="nome-empresa">POSITIVE MIND</span> -->
         </div>
-        <span class="nav-usuario">Bem-vindo (a),<?php echo $nome ?></span>
+        <span class="nav-usuario">Bem-vindo (a),<?php echo $_SESSION['usuario_nome']; ?></span>
 
         <a href="comunidade.php" class="nav-home">Comunidade</a>
         <a href="sobreEmpresa.php" class="nav-home">Quem somos?</a>
@@ -60,7 +60,7 @@ include 'conexao.php';
         <div class="psicologos">
             <div class="icone-botao">
                 <img class="icones" src="img/iconpsicologo.png">
-                <button href="#" class="button-grid">Acessar</button>
+                <a href="areapsicologos.php" class="button-grid">Acessar</a>
             </div>
             <div class="grid-areas">
                 <h3> Psicólogos</h3>
@@ -70,7 +70,7 @@ include 'conexao.php';
         <div class="comunidade">
             <div class="icone-botao">
                 <img class="icones" src="img/iconrelaxar.png">
-                <button class="button-grid">Acessar</button>
+                <a href="comunidade.php" class="button-grid">Acessar</a>
             </div>
             <div class="grid-areas">
                 <h3>Comunidade</h3>
@@ -80,7 +80,7 @@ include 'conexao.php';
         <div class="motivacao">
             <div class="icone-botao">
                 <img class="icones" src="img/iconmotivation.png">
-                <button class="button-grid">Acessar</button>
+                <a href="motivacao.php" class="button-grid">Acessar</a>
             </div>
             <div class="grid-areas">
                 <h3>Motivação do dia</h3>
@@ -90,7 +90,7 @@ include 'conexao.php';
         <div class="sobre">
             <div class="icone-botao">
                 <img class="icones" src="img/icontranstornomental.jpg">
-                <button class="button-grid">Acessar</button>
+                <a href="areasobretranstornos.php" class="button-grid">Acessar</a>
             </div>
             <div class="grid-areas">
                 <h3>Sobre</h3>
