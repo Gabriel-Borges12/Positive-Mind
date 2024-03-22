@@ -21,40 +21,68 @@
     </div>
 </header>
 
-<div class="conteudo">
-    <h1>Sinta-se livre para relatar suas experiências aqui.</h1>
-    <div class="linha1"></div>
-    <div class="perfil-usuario">
-        <img src="img/desenvolvedorLeonardo.jpg" alt="Foto de Perfil">
-        <span>Nome do Usuário</span>
-    </div>
-    <div class="imagem-com">
-        <img src="img/volei.png" alt="Outra Imagem">
-        <img src="img/jogo.png" alt="Outra Imagem">
-    </div>
-    <div class="comentario">
-        <p>Eu não aguento mais não saber jogar vôlei e estou me sentindo muito ansioso com isso....</p>
-    </div>
-    <a href="#" class="ver-comentarios">Ver Comentários</a>
-    <div class="linha"></div>
-    <div class="perfil-usuario">
-        <img src="img/productoOwnerBorges.jpeg" alt="Foto de Perfil">
-        <span>Nome do Usuário</span>
-    </div>
-    <div class="comentario">
-        <p>Estou me sentindo meio pra baixo esses dias por não conseguir achar um erro no meu código, 
-            creio que vou ter que fazer uma gambiarra nisso...</p>
-    </div>
-    <a href="#" class="adicionar-comentarios">Adicionar Comentário</a>
-</div>
 
-<div class="add-comentario">
-    <a href="#" class="botao-adicionar">
-    <i class="icon-plus">&#43;</i>
-    </a>
-</div>
+<template class="reply-input-template">
+    <div class="reply-input container">
+    <img src="../img/productoOwnerBorges.jpeg" alt="" class="usr-img">
+      <textarea class="cmnt-input" placeholder="Adicionar comentário..."></textarea>
+      <button class="bu-primary">Enviar</button>
+    </div>
+  </template>
+  <h2>Sinta-se livre para relatar suas experiências aqui</h2>
+  <template class="comment-template">
+    <div class="comment-wrp">
+      <div class="comment container">
+        <div class="c-score">
+          <img src="img/icon-plus.svg" alt="plus" class="score-control score-plus">
+          <p class="score-number">5</p>
+          <img src="img/icon-minus.svg" alt="minus" class="score-control score-minus">
+        </div>
+        <div class="c-controls">
+          <a  class="delete"><img src="img/icon-delete.svg" alt="" class="control-icon">Excluir</a>
+          <a  class="edit"><img src="img/icon-edit.svg" alt="" class="control-icon">Editar</a>
+          <a  class="reply"><img src="img/icon-reply.svg" alt="" class="control-icon">Responder</a>
+        </div>
+        <div class="c-user">
+          <img src="img/productoOwnerBorges.jpeg" alt="" class="usr-img">
+          <p class="usr-name">gabrielborges</p>
+          <p class="cmnt-at">2 semanas atrás</p>    
+        </div>
+        <p class="c-text">
+          <span class="reply-to"></span>
+          <span class="c-body"></span>
+        </p>
+      </div><!--comment-->
+      <div class="replies comments-wrp">
+      </div><!--replies-->
+    </div>
+  </template>
+<main class="main-content">
+<h2>Sinta-se livre para relatar suas experiências aqui</h2>
+  <div class="comment-section">
 
-<footer class="main_footer container">
+    <div class="comments-wrp">
+
+    </div> <!--commentS wrapper-->
+  <div class="reply-input container">
+      <img src="img/productoOwnerBorges.jpeg" alt="" class="usr-img">
+      <textarea class="cmnt-input" placeholder="Adicionar comentário..."></textarea>
+      <button class="bu-primary">Enviar</button>
+    </div> <!--reply input-->
+  </div> <!--comment sectio-->
+  
+  <div class="modal-wrp invisible">
+    <div class="modal container">
+      <h3>Deletar comentário</h3>
+      <p>Tem certeza de que deseja excluir este comentário? Isso removerá o comentário e não poderá ser desfeito</p>
+      <button class="yes">Sim, deletar</button>
+      <button class="no">Não, cancelar</button>
+    </div>
+  </div>
+</main>
+    <script src="app.js"></script>
+
+<footer class="main_footer container2">
     <div class="content">
         <div class="colfooter">
             <h4 class="titleFooter">Menu</h4>
