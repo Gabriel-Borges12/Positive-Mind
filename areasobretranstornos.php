@@ -40,6 +40,7 @@
         <a href="areapsicologos.php" class="second-part">Clique aqui para buscar ajuda.</a>
     </h3>
 
+<<<<<<< HEAD
 
     <div class="chat-container">
         <div id="chat-display" class="chat-display"></div>
@@ -48,6 +49,40 @@
     </div>
 
     <script src="script.js"></script>
+=======
+    <h4>Faça sua pesquisa:</h4>
+<input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
+<button onclick="performSearch()">Pesquisar</button>
+
+<div id="searchResults"></div>
+
+    <!-- Adicione aqui o bloco de script fornecido -->
+    <script>
+        function performSearch() {
+            const apiKey = 'AIzaSyAkFyrx2q2zvWSvgQkBd7DfU_HI1tWs96k';
+            const customSearchId = '67c197f7239ad4393'; // Apenas o identificador, não a URL completa
+            const query = document.getElementById('searchInput').value;
+
+            const apiUrl = `https://www.googleapis.com/customsearch/v1?q=${query}&key=${apiKey}&cx=${customSearchId}`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => displayResults(data.items))
+                .catch(error => console.error('Erro na pesquisa:', error));
+        }
+
+        function displayResults(results) {
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = '';
+
+            results.forEach(result => {
+                const resultElement = document.createElement('div');
+                resultElement.innerHTML = `<a href="${result.link}" target="_blank">${result.title}</a><p>${result.snippet}</p>`;
+                resultsContainer.appendChild(resultElement);
+            });
+        }
+    </script>
+>>>>>>> 867676613d5488f25198cf8951738b08fdb10cad
 
     <footer class="main_footer container">
 
