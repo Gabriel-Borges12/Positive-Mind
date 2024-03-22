@@ -130,6 +130,23 @@ margin-top: 3%;
     height: 130px;
 }
 
+<<<<<<< HEAD
+.mapBox {
+    position: relative;
+    width: 100%; /* Alterado para ocupar toda a largura */
+    margin: 0 auto; /* Centralizado horizontalmente */
+    height: 500px;
+    background: #fff;
+}
+
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
+
+=======
+>>>>>>> 5dda474498b03a5fd57ca95e899dddf2a2c99748
 .container-icons {
     display: flex;
     justify-content: center; /* Centraliza os ícones horizontalmente */
@@ -412,6 +429,9 @@ margin-top: 3%;
         border-right: 0;
     }
 }
+<<<<<<< HEAD
+
+=======
 .mapBox {
     position: relative;
     width: 100%; /* Alterado para ocupar toda a largura */
@@ -425,3 +445,4 @@ margin-top: 3%;
     width: 100%;
     height: 100%;
 }
+>>>>>>> 5dda474498b03a5fd57ca95e899dddf2a2c99748

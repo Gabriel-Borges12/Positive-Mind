@@ -7,10 +7,10 @@
   }
 
   .card {
-    margin-left: 640px;
+    /* Mantendo as propriedades existentes */
+    margin-left: 250px;
     margin-top: 45px;
     margin-bottom: 80px;
-    /* position: absolute; */
     background-color: #F8F8F8;
     border-radius: 1.5em;
     min-width: 400px;
@@ -18,15 +18,14 @@
     width: 20%;
     padding: 2.6em 3.8em;
     cursor: pointer;
-    top: 50%;
-    /* transform: translate(-50%, -50%); */
-    left: 40%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 
       0 8px 8px rgba(0, 0, 0, 0.1),
       0 16px 16px rgba(0, 0, 0, 0.1), 
       0 32px 32px rgba(0, 0, 0, 0.15),
       0 64px 64px rgba(0, 0, 0, 0.15);
-  }
+     
+}
+
   .note::after {
     content: '';
     width: 20%;
@@ -172,7 +171,7 @@ background-color: #1C5739;
     background-color: #fff;
     height: 550px;
     margin-top: 200px;
-    /* padding-top: 10px; */
+    text-align: center;
 }
 
 /* #baixo {
@@ -207,6 +206,10 @@ background-color: #1C5739;
     margin-left: 60px;
 }
 
+.flex-conteudo {
+    display: flex;
+}
+
 .containerBloco {
     width: 150px; /* Largura dos containers */
     height: 150px; /* Altura dos containers */
@@ -223,8 +226,23 @@ background-color: #1C5739;
 #textoParagrafo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 50px;
+    color: #000; /* Cor do texto para melhor contraste */
+    width: 50px; /* Largura máxima do texto */
+    word-wrap: break-word; /* Quebra de palavras */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adicionado para espaçamento interno */
 }
+
+.textoParagrafos {
+    color: white;
+    margin-top: 20px;
+    margin: 20px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
 .recursosSite{
     margin-top: 20px;
     padding-top: 20px;
@@ -232,7 +250,21 @@ background-color: #1C5739;
 }
 .sobreTranstornos {
     background-color: #1C5739;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative; 
 }
+
+#mulherpensando {
+    width: 70%;
+    height: 70%;
+    margin-top: 80px;
+    margin-left: 180px;
+}
+
 
 #textoTitulo2 {
     display: flex;
@@ -251,25 +283,32 @@ background-color: #1C5739;
     /* padding-bottom: 50px; */
 }
 
-.textoParagrafos {
+#textoParagrafo {
     display: flex;
     justify-content: center;
-    color: white;
-    margin-top: 20px;
-    margin: 20px;
     align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    color: #000; 
+    width: 550px; 
+    word-wrap: break-word; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
+
 
 .quadradoFundo {
     background-color: #184b30;
     height: 150px;
     width: 900px;
     padding-top: 20px;
-    margin-top: 20px;
-    margin-left: 400px;
+    margin: 20px auto; /* Alterado para centralizar horizontalmente */
     border-radius: 20px;
+    display: flex; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Alinha o texto verticalmente */
 }
-
 
 /* footer */
 
