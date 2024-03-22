@@ -52,12 +52,14 @@
             <img src="./img/icon_pessoa.png" alt="Ícone 4" class="iconpsic">
         </div>
     </div>
-    <div>
-        <h3>Localize os locais mais próximos de você:</h3>
-    </div>
-    <div class="mapBox">
+    <h3>Localize os locais mais próximos de você:</h3>
+
+<br><br><br><br><br>
+
+<div class="mapBox">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19461.68016233486!2d-45.70319744030414!3d-23.111083796311235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1710763158769!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+</div>
+
 
     <footer class="main_footer container">
 
@@ -72,7 +74,7 @@
                     <li><a href="index.php" title="Página Inícial">Página Inícial</a></li>
                     <li><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></li>
                     <li><a href="comunidade.php" title="Comunidade">Comunidade</a></li>
-                    <li><a href="fale_conosco1" title="Fale Conosco">Fale Conosco</a></li>
+                    <li><a href="fale_conosco1.php" title="Fale Conosco">Fale Conosco</a></li>
 
                 </ul>
 
