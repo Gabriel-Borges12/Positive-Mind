@@ -22,11 +22,17 @@ body {
 
 /* Adicione estas regras para deixar o navbar fixo */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #86BAA0;
+    color: #fff;
+    /* position: fixed; */ /* Remove position fixed */
+    /* top: 0; */ /* Remove top property */
+    /* left: 0; */ /* Remove left property */
+    /* width: 100%; */ /* Remove width property */
+    /* z-index: 1000; */ /* Remove z-index property */
 }
 
 /* Adicione esta regra para ajustar o conteúdo abaixo do navbar */
@@ -35,24 +41,14 @@ body {
 }
 
 /* Navbar */
-.navbar {
+/* .navbar {
     height: 80px;
     display: flex;
     align-items: center;
     padding: 0 20px;
-}
+} */
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #86BAA0;
-    color: #fff;
-    position: fixed; /* Adicionando posição fixa para manter o navbar no topo */
-    top: 0; /* Fixando o navbar no topo */
-    width: 100%; /* Ocupando toda a largura da tela */
-    z-index: 1000; /* Ajustando o z-index para garantir que o navbar esteja acima de outros elementos */
 
-}
 
 .estrutura-logo {
     display: flex;
@@ -429,6 +425,11 @@ a {
         border-right: 0;
     }
 }
+.titulo {
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
 :root {
@@ -453,12 +454,7 @@ a {
 p{
     line-height: 1.5;
 }
-body{
-    height: 100%;
-    width: 100%;
-    padding-top: 3rem;
-    background-color: var(--Very-light-gray);
-}
+
 a{
     cursor: pointer;
     text-decoration: none;

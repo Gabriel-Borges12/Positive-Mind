@@ -29,7 +29,6 @@
       <button class="bu-primary">Enviar</button>
     </div>
   </template>
-  <h2>Sinta-se livre para relatar suas experiências aqui</h2>
   <template class="comment-template">
     <div class="comment-wrp">
       <div class="comment container">
@@ -58,7 +57,7 @@
     </div>
   </template>
 <main class="main-content">
-<h2>Sinta-se livre para relatar suas experiências aqui</h2>
+<h2 class="titulo">Sinta-se livre para relatar suas experiências aqui</h2>
   <div class="comment-section">
 
     <div class="comments-wrp">
