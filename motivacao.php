@@ -22,7 +22,7 @@
 
     
         <div id="endireitar">
-        <h1 class="frase-do-dia" id="frase-do-dia">A frase do dia é:</h1>
+        <h1 class="frase-do-dia" id="frase-do-dia">Frase Motivadora:</h1>
     </div>
      <div class="container">   <!-- Container para as frases -->
         <div id="container-frases" class="container-frases"></div>

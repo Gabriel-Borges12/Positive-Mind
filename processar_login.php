@@ -3,14 +3,8 @@ session_start();
 include 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-<<<<<<< HEAD
-    $user = $_POST['user'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-=======
     $email = $_POST['usuario_nome'];
     $senha = $_POST['usuario_senha'];
->>>>>>> 9d57b934ae86d617987556d4c58e9d4e3b6e0992
 
 
     $sql = "SELECT * FROM usuarios WHERE usuario_nome = ?";

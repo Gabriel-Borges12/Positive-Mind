@@ -16,7 +16,7 @@
             <!-- <span class="nome-empresa">POSITIVE MIND</span> -->
         </div>
         <div class="navSpace">
-            <a href="sobreEmpresa.php" class="nav-home">Quem somos?</a>
+            <a href="sobreEmpresa.php" id="somosNos" class="nav-home">Quem somos?</a>
             <a href="login.php" class="nav-home">Entrar</a>
         </div>
     </header>
@@ -40,33 +40,36 @@
         <div class="sobreTranstornos">
             <div class="linha"></div>
             <h2 id="textoTitulo2">Entenda mais sobre os transtornos mentais, se conecte!</h2>
-            <div class="container-wrapper">
-                <div class="containerBloco">De acordo com a OMS, cerca de 10% da população mundial sofre com transtornos
-                    mentais.</div>
-                <div class="containerBloco">Na América Latina, quase 16 milhões de jovens entre 10 e 19 anos têm algum
-                    transtorno mental.</div>
-                <div class="containerBloco">Estresse, genética e nutrição são fatores que contribuem para transtornos
-                    mentais.</div>
-
-                <!-- <img id="mulherPensando"src="img/mocaPensante.png"> -->
-
+            <div class="flex-conteudo">
+                <div class="container-wrapper">
+                    <div class="containerBloco">De acordo com a OMS, cerca de 10% da população mundial sofre com
+                        transtornos
+                        mentais.</div>
+                    <div class="containerBloco">Na América Latina, quase 16 milhões de jovens entre 10 e 19 anos têm
+                        algum
+                        transtorno mental.</div>
+                    <div class="containerBloco">Estresse, genética e nutrição são fatores que contribuem para
+                        transtornos
+                        mentais.</div>
+                </div>
+                <div class="imagemmulher">
+                    <img id="mulherpensando" src="img/mocaPensante.png">
+                </div>
             </div>
-        </div>
-        
-        <div class="recursosSite">
-        <div class="linha"></div>
-            <h3 id="textoRecursos">O desequilíbrio emocional facilita o surgimento de doenças mentais.</h3>
-            <div class="quadradoFundo">
-                <p class="textoParagrafos">Com o nosso site, você consegue explorar nossa variedade de recursos,
-                    incluindo
-                    artigos educativos sobre
-                    temas relevantes, dicas práticas para o dia a dia e ferramentas interativas para fortalecer sua
-                    resiliência emocional.</p>
+            <div class="recursosSite">
+                <div class="linha"></div>
+                <h3 id="textoRecursos">O desequilíbrio emocional facilita o surgimento de doenças mentais.</h3>
+                <div class="quadradoFundo">
+                    <p class="textoParagrafos">Com o nosso site, você consegue explorar nossa variedade de recursos,
+                        incluindo
+                        artigos educativos sobre
+                        temas relevantes, dicas práticas para o dia a dia e ferramentas interativas para fortalecer sua
+                        resiliência emocional.</p>
 
-                <!-- COLOCAR RECURSO QUE QUEBRA EM LINHA PERGUNTAR PRO PROF LUIS QUE SABE -->
-                <p class="textoParagrafos">Você está pronto para fazer isso?</p>
-            </div>
-            <div class="card">
+                    <!-- COLOCAR RECURSO QUE QUEBRA EM LINHA PERGUNTAR PRO PROF LUIS QUE SABE -->
+                    <p class="textoParagrafos">Você está pronto para fazer isso?</p>
+                </div>
+                <div class="card">
                     <h1>Positive Mind é
                         <!-- Scroller Start -->
 
@@ -87,8 +90,8 @@
                         <a href="sobreEmpresa.php">Conheça nosso projeto!.</a>
                     </p>
                 </div>
+            </div>
         </div>
-
     </container>
     <footer class="main_footer container">
 
