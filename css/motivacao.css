@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
 .navbar {
     height: 80px;
     display: flex;
@@ -13,7 +17,7 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #86BAA0;
     color: #fff;
 }
@@ -41,8 +45,8 @@
     margin-top: 20px;
     font-family: Arial, sans-serif; /* Fonte da frase */
     color: #333; /* Cor do texto */
-    width: 450px; /* Tamanho do quadrado */
-    height: 450px; /* Tamanho do quadrado */
+    width: 350px; /* Tamanho do quadrado */
+    height: 350px; /* Tamanho do quadrado */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,10 +69,7 @@
     margin-top: 50px;
     text-decoration:underline;
 }
-a{
-    text-decoration:none ;
-    color:#262626;
-}
+
 
 /* Responsivo - Ajuste de margem para dispositivos menores */
 @media (max-width: 768px) {

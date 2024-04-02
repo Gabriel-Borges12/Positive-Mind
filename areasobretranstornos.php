@@ -1,3 +1,10 @@
+<?php
+session_start();
+include 'conexao.php';
+
+$nome = $_SESSION['usuario_nome'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,51 +18,44 @@
 </head>
 
 <body>
-    <header class="navbar">
+<header class="navbar">
         <div class="estrutura-logo">
             <img src="img/logopadrao.png" alt="Logo" class="logo">
-            <span class="nome-empresa">POSITIVE MIND</span>
         </div>
-        <span class="nav-usuario">Bem-vindo (a),
-            <?php echo $_SESSION['usuario_nome']; ?>
-        </span>
-        <a href="comunidade.php" class="nav-home">Comunidade</a>
+        <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
+        <div id="links">
+            <a href="home.php" class="nav-home">Inicio</a>
+            <a href="comunidade.php" class="nav-home">Comunidade</a>
+            <a href="" class="nav-home">Sair</a>
+        </div>
     </header>
-    <h2>Sobre os Transtornos Psicológicos</h2>
+    <h2 class="transtornos-sobre">Sobre os Transtornos Psicológicos</h2>
 
-    <h3 id="funcao" class="informacao" onclick="mostrarInformacao()">Você sabe qual a função de um psicólogo?
+    <h3 id="funcao" class="informacao">O que é um transtorno mental?
     </h3>
     </div>
     </div>
-    <div class="container">
-        <div id="conteudo" style="display: none;">
-            <p>Um psicólogo é um profissional da saúde mental que estuda o comportamento humano e os processos mentais.
-                Ele utiliza diversas técnicas e abordagens terapêuticas para ajudar as pessoas a lidar com problemas
-                emocionais, mentais e comportamentais.</p>
-        </div>
-    </div>
+    <div class="flex-conteudo">
+                <div class="container-wrapper">
+                    <div class="containerBloco">Existem diversos transtornos mentais, com apresentações diferentes.</div>
+                    <div class="containerBloco">Eles geralmente são caracterizados por uma combinação de comportamento anormais</div>
+                    <div class="containerBloco">Que também podem afetar as relações com outras pessoas.</div>
+                </div>
+              
+            </div>
 
     <h3>
         <span class="first-part">Você acha que precisa de ajuda? </span>
         <a href="areapsicologos.php" class="second-part">Clique aqui para buscar ajuda.</a>
     </h3>
 
-<<<<<<< HEAD
-   <div id="botaao" >
-    <h4>Qual transtorno você gostaria de conhecer mais:</h4>
-=======
-<<<<<<< HEAD
 
-    <div class="chat-container">
-        <div id="chat-display" class="chat-display"></div>
-        <input type="text" id="user-input" class="user-input" placeholder="Type your message...">
-        <button onclick="sendMessage()" class="send-button">Send</button>
-    </div>
+    <div id="botaao" >
+    <h4>Qual transtorno você gostaria de conhecer mais:</h4>
 
     <script src="script.js"></script>
-=======
+
     <h4>Faça sua pesquisa:</h4>
->>>>>>> edd7300977cfb82664b9a65fe86641d8858ed55a
 <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
 <button onclick="performSearch()">Pesquisar</button>
 </div>
@@ -88,7 +88,7 @@
             });
         }
     </script>
->>>>>>> 867676613d5488f25198cf8951738b08fdb10cad
+
 
     <footer class="main_footer container">
 

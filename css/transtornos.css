@@ -17,13 +17,14 @@ body {
 .navbar {
     height: 80px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     padding: 0 20px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #86BAA0;
     color: #fff;
 }
@@ -53,13 +54,30 @@ body {
     margin-left: 100px;
 }
 
-.informacao {
-    text-align: left;
-    font-size: 18px;
-    margin-top: 60px;
-    margin-left: 100px;
-}
-
+.flex-conteudo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .containerBloco {
+    width: 150px;
+    height: 150px;
+    background-color: #86BAA0;
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 13px;
+    align-items: center;
+    border-radius: 0px 0px 15px 0px;
+  }
+  .container-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+  }
 .container {
     .container {
         margin-top: 50px;
@@ -79,14 +97,10 @@ body {
 }
 
 .informacao {
-    text-align: center;
-    /* Alinha o texto no centro */
-    cursor: pointer;
-    /* Adiciona cursor ao texto */
-    font-size: 18px;
-    /* Define o tamanho da fonte */
-    margin-top: -20px;
-    /* Adiciona espaço acima do texto */
+    text-align: left;
+    font-size: 24px;
+    margin-top: 60px;
+    margin-left: 100px;
 }
 
 #conteudo {
@@ -108,17 +122,13 @@ body {
 
 a {
     text-decoration: none;
-    color:#262626;
+    color:#ffffff;
 }
 
 #funcao {
     margin-left: 150px;
     margin-bottom: 0px;
     margin-top: 40px;
-}
-
-.informacao {
-    cursor: pointer;
 }
 
 .container1 {
@@ -161,15 +171,95 @@ a {
     padding: 10px;
 }
 
+h3 {
+    text-align: center;
+    color: #1a693b;
+    margin-bottom: 30px;
+  }
+  .first-part {
+    /* font-size: 24px; */
+    font-weight: bold;
+  }
+  .second-part {
+    color: #1a693b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .second-part:hover {
+    color: #1a693b;
+  }
+  #botaao {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 500px;
+    margin-left: 600px;
+  }
+  h4 {
+    color: #1a693b;
+    margin-bottom: 10px;
+  }
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  button {
+    background-color: #1a693b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #15865b;
+  }
+
+  #searchResults {
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionando box-shadow */
+    padding: 1px; /* Adicionando padding */
+    border-radius: 10px; /* Adicionando borda arredondada */
+  }
+  #searchResults a {
+    color: #15865b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  #searchResults a:hover {
+    text-decoration: underline;
+  }
+
 .send-button {
     width: 60px;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #15865b;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
+.transtornos-sobre {
+    display: flex;
+    margin-left: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px; /* Reduzindo um pouco o tamanho da fonte */
+    color: #333;
+    margin-bottom: 10px; /* Adicionando um espaço inferior */
+    margin-top: 50px;
+    text-decoration:underline;
+
+}
 
 .container-icons {
     display: flex;

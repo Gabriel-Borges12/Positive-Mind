@@ -1,6 +1,16 @@
 <?php
+// Inicia a sessão
 session_start();
-include 'conexao.php';
+
+// Verifica se o usuário já está logado
+if(isset($_SESSION["usuario_logado"]) && $_SESSION["usuario_logado"] === true){
+    // Se sim, redireciona para outra página
+    header("location: index.php");
+    exit;
+}
+
+// Se o formulário de login for enviado, você verifica as credenciais e, se forem válidas, define $_SESSION["usuario_logado"] como true e redireciona para a página logada.
+// Se as credenciais não forem válidas, você exibe uma mensagem de erro.
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +23,7 @@ include 'conexao.php';
   <title>Positive Mind</title>
   <link rel="stylesheet" href="./css/login.css" />
   <link rel="shortcut icon" type="imagex/png" href="./img/mind-logo.ico">
+  <link rel="icon" href=" ./img/icone-cerebro.png">
 </head>
 
 <body>

@@ -1,7 +1,15 @@
+<?php
+session_start();
+include 'conexao.php';
+
+$nome = $_SESSION['usuario_nome'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href=" ./img/icone-cerebro.png">
     <title>Fale Conosco</title>
     <link rel="stylesheet" href="css/fale1.css">
     <script

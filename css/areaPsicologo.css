@@ -62,11 +62,10 @@ body {
 }
 .imagem {
     width: 300px; 
-    position: absolute; 
-    top: 50%; 
-    left: 80%; 
-    transform: translate(-60%, -60%); 
-    margin-top: 3%;
+    display: flex;
+    justify-content: flex-end;
+    /* position: absolute;  */
+ 
 }
 a{
     text-decoration: none;
@@ -80,6 +79,7 @@ a{
 }
 .container1{
 margin-top: 3%;
+margin-bottom: 20px;
 }
 #cerebro{
     height: 50px;
@@ -127,10 +127,10 @@ margin-top: 3%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .iconpsic{
-    height: 130px;
+    width: 200px;
+    height: 200px;
 }
 
-<<<<<<< HEAD
 .mapBox {
     position: relative;
     width: 100%; /* Alterado para ocupar toda a largura */
@@ -145,8 +145,6 @@ margin-top: 3%;
     height: 100%;
 }
 
-=======
->>>>>>> 5dda474498b03a5fd57ca95e899dddf2a2c99748
 .container-icons {
     display: flex;
     justify-content: center; /* Centraliza os ícones horizontalmente */
@@ -429,9 +427,6 @@ margin-top: 3%;
         border-right: 0;
     }
 }
-<<<<<<< HEAD
-
-=======
 .mapBox {
     position: relative;
     width: 100%; /* Alterado para ocupar toda a largura */
@@ -445,4 +440,3 @@ margin-top: 3%;
     width: 100%;
     height: 100%;
 }
->>>>>>> 5dda474498b03a5fd57ca95e899dddf2a2c99748

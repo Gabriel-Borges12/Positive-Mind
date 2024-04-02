@@ -1,3 +1,9 @@
+<?php
+session_start();
+include 'conexao.php';
+
+$nome = $_SESSION['usuario_nome'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/areaPsicologo.css">
     <script type="text/javascript" src="main.js"></script>
+    <link rel="icon" href=" ./img/icone-cerebro.png">
     <title>Área sobre Psicólogos</title>
 
 </head>
@@ -16,15 +23,14 @@
         <div class="estrutura-logo">
             <img src="img/logopadrao.png" alt="Logo" class="logo">
         </div>
-        <span class="nav-usuario">Bem-vindo (a)</span>
+        <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
         <div id="links">
-            <a href="index.php" class="nav-home">Inicio</a>
+            <a href="home.php" class="nav-home">Inicio</a>
             <a href="comunidade.php" class="nav-home">Comunidade</a>
             <a href="" class="nav-home">Sair</a>
         </div>
     </header>
     <div class="container1">
-        <img src="img/logoverdefundo.jpeg" class="imagem">
 
         <div class="paragrafos">
             <div id="align">
@@ -34,6 +40,7 @@
 
             <h3 id="funcao" class="informacao" onclick="mostrarInformacao()">Você sabe qual a função de um psicólogo?
             </h3>
+            
         </div>
     </div>
     <div class="container">

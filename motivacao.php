@@ -1,3 +1,10 @@
+<?php
+session_start();
+include 'conexao.php';
+
+$nome = $_SESSION['usuario_nome'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/motivacao.css">
     <script type="text/javascript" src="maotivacao.js"></script>
+    <link rel="icon" href=" ./img/icone-cerebro.png">
     <title>Motivação</title>
 </head>
 <body>
