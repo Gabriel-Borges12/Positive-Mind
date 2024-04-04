@@ -151,8 +151,9 @@ background-color: #1C5739;
 }
 
 #sobreBanner{
+    display: flex;
+    justify-content: center;
     background-color: #1C5739;
-    width: 200px;
     height: 300px;
 }
 
@@ -165,6 +166,9 @@ background-color: #1C5739;
 #bannerPrincipal {
     display: flex;
     justify-content: center;
+    width: 1000px;
+    height: 500px;
+    margin-top: 25px;
 }
 
 .sobreSaude {

@@ -2,7 +2,6 @@
 session_start();
 include 'conexao.php';
 
-$nome = $_SESSION['usuario_nome'];
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +29,7 @@ $nome = $_SESSION['usuario_nome'];
 
     <container>
         <div id="sobreBanner">
-            <img id="bannerPrincipal" src="img/page3.png">
+            <img id="bannerPrincipal" src="img/BannerPaginaIndex.png">
         </div>
 
         <div class="sobreSaude">
