@@ -10,6 +10,7 @@ $nome = $_SESSION['usuario_nome'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <link rel="stylesheet" href="css/areaPsicologo.css">
     <script type="text/javascript" src="main.js"></script>
     <link rel="icon" href=" ./img/icone-cerebro.png">
@@ -23,7 +24,9 @@ $nome = $_SESSION['usuario_nome'];
         <div class="estrutura-logo">
             <img src="img/logopadrao.png" alt="Logo" class="logo">
         </div>
-        <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
+        <span class="nav-usuario">Bem-vindo (a),
+            <?php echo $nome ?>
+        </span>
         <div id="links">
             <a href="home.php" class="nav-home">Inicio</a>
             <a href="comunidade.php" class="nav-home">Comunidade</a>
@@ -40,7 +43,7 @@ $nome = $_SESSION['usuario_nome'];
 
             <h3 id="funcao" class="informacao" onclick="mostrarInformacao()">Você sabe qual a função de um psicólogo?
             </h3>
-            
+
         </div>
     </div>
     <div class="container">
@@ -60,13 +63,60 @@ $nome = $_SESSION['usuario_nome'];
         </div>
     </div>
     <h3>Localize os locais mais próximos de você:</h3>
+    <div id="map" style="width: 800px; height: 700px;">
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js">
+    </script>
+    <!-- Atividade Sobre API GABRIEL CAMARGO DE SOUZA BORGES -->
+    <script>
+        var map = L.map('map').setView([-23.1118, -45.7076], 15); // Coordenadas de Caçapava, SP
 
-<br><br><br><br><br>
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 20
+        }).addTo(map);
 
-<div class="mapBox">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19461.68016233486!2d-45.70319744030414!3d-23.111083796311235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1710763158769!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+        // Array de objetos de marcadores para Taubaté, Caçapava, SESI e São José dos Campos
+        var markers = [
+            {
+                lat: -23.10223163953978,
+                lng: -45.70462087226231,
+                name: 'Portal da Esfiha - Esfiharia'
+            },
+            {
+                lat: -23.07679041351799,
+                lng: -45.711278946500876,
+                name: 'Moçota - Parque da cidade'
+            },
+            {
+                lat: -23.10204235223452,
+                lng: -45.711358204171155,
+                name: 'Buffet Happy Play - Local onde trabalho'
+            },
+            {
+                lat: -23.105416969329983,
+                lng: -45.70397682663471,
+                name: 'Arena Sports - Jogar o voleizinho de domingo'
+            },
+            {
+                lat: -23.096118797656775,
+                lng: -45.70998908329672,
+                name: 'Resenha na areia - Novo lugar de jogar o voleizinho de domingo'
+            }
+        ];
 
+        // Adicionar marcadores ao mapa
+        markers.forEach(function (marker) {
+            L.marker([marker.lat, marker.lng]).addTo(map)
+                .bindPopup(marker.name);
+        });
+
+
+        // Adicionar marcadores ao mapa
+        markers.forEach(function (marker) {
+            L.marker([marker.lat, marker.lng]).addTo(map)
+                .bindPopup(marker.name);
+        });
+    </script>
 
     <footer class="main_footer container">
 
