@@ -1,13 +1,6 @@
 <?php
 // Inicia a sessão
-session_start();
 
-// Verifica se o usuário já está logado
-if(isset($_SESSION["usuario_logado"]) && $_SESSION["usuario_logado"] === true){
-    // Se sim, redireciona para outra página
-    header("location: index.php");
-    exit;
-}
 
 // Se o formulário de login for enviado, você verifica as credenciais e, se forem válidas, define $_SESSION["usuario_logado"] como true e redireciona para a página logada.
 // Se as credenciais não forem válidas, você exibe uma mensagem de erro.

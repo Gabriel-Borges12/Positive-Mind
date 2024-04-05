@@ -32,6 +32,7 @@ include 'conexao.php';
             <img id="bannerPrincipal" src="img/BannerPaginaIndex.png">
         </div>
 
+        
         <div class="sobreSaude">
             <!-- <img id="cima" src="img/imagem2Sobre.png"> -->
             <h1 id="textoTitulo">Como está sua saúde mental?</h1>
