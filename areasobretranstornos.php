@@ -2,8 +2,16 @@
 session_start();
 include 'conexao.php';
 
+// Verifica se o usuário já está logado
+if(isset($_SESSION["usuario_logado"]) && $_SESSION["usuario_logado"] == true){
+
+} else {
+    header("location: index.php");
+}
+
 $nome = $_SESSION['usuario_nome'];
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -24,7 +32,7 @@ $nome = $_SESSION['usuario_nome'];
         </div>
         <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
         <div id="links">
-            <a href="home.php" class="nav-home">Inicio</a>
+            <a href="home.php" class="nav-home">InÍcio</a>
             <a href="comunidade.php" class="nav-home">Comunidade</a>
             <a href="" class="nav-home">Sair</a>
         </div>
