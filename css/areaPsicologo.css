@@ -77,7 +77,7 @@ a {
 }
 
 #links {
-    margin-left: 50%;
+    /* margin-left: 50%; */
     justify-content: center;
 }
 
@@ -426,6 +426,6 @@ a {
 
 
 #proftext{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     margin-top: 50px;
 }

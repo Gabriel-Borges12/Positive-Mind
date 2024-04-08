@@ -61,6 +61,9 @@ $nome = $_SESSION['usuario_nome'];
         <h2 id="proftext">Profissionais de saúde mental na região:</h2>
         <div class="container-icons">
             <img src="./img/icon_pessoa.png" alt="Ícone 1" class="iconpsic">
+            <img src="./img/icon_pessoa.png" alt="Ícone 1" class="iconpsic">
+            <img src="./img/icon_pessoa.png" alt="Ícone 1" class="iconpsic">
+            <img src="./img/icon_pessoa.png" alt="Ícone 1" class="iconpsic">
             <img src="./img/icon_pessoa.png" alt="Ícone 2" class="iconpsic">
             <img src="./img/icon_pessoa.png" alt="Ícone 3" class="iconpsic">
             <img src="./img/icon_pessoa.png" alt="Ícone 4" class="iconpsic">
