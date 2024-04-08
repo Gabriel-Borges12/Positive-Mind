@@ -42,6 +42,7 @@ include 'conexao.php';
             <img id="parteBaixo" src="img/imagem5Sobre.png">
             <img id="parteBaixo2" src="img/imagem4Sobre.png"> -->
             <!-- <img id="cima1" src="img/imagem3Sobre.png"> -->
+            </div>
         </div>
 
         <div class="sobreTranstornos">

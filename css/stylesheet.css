@@ -98,6 +98,8 @@ background-color: #1C5739;
 #somosNos {
     margin-right: 20px;
 }
+
+
 .nav-home {
     display: flex;
     justify-content: center;
@@ -299,7 +301,6 @@ background-color: #1C5739;
     margin: 0 auto; 
     padding: 20px; 
 }
-
 
 .quadradoFundo {
     background-color: #184b30;

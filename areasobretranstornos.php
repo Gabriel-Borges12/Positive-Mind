@@ -28,7 +28,9 @@ $nome = $_SESSION['usuario_nome'];
 <body>
 <header class="navbar">
         <div class="estrutura-logo">
+        <a href="home.php">
             <img src="img/logopadrao.png" alt="Logo" class="logo">
+            </a>
         </div>
         <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
         <div id="links">

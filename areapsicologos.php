@@ -28,11 +28,13 @@ $nome = $_SESSION['usuario_nome'];
 <body>
     <header class="navbar">
         <div class="estrutura-logo">
+            <a href="home.php">
             <img src="img/logopadrao.png" alt="Logo" class="logo">
+            </a>
         </div>
         <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
         <div id="links">
-            <a href="home.php" class="nav-home">Inicio</a>
+            <a href="home.php" class="nav-home">Início</a>
             <a href="comunidade.php" class="nav-home">Comunidade</a>
             <a href="" class="nav-home">Sair</a>
         </div>

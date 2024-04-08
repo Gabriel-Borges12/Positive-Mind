@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #86BAA0;
+    font-family: Arial, sans-serif;
+}
+
+/* Adicione a meta tag viewport no HTML para a responsividade */
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    padding-left: 30px !important;
+    margin-bottom: 10px;
+    border: 6px solid #86BAA0;
+    border-radius: 5px;
+    background-color: #86BAA0;
+}
+
+/* Adicione estas linhas para definir a cor do texto como branco */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="text"],
+input[type="password"] {
+    color: white !important;
+}
+
+.fa-regular {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+/* ====================================================== */
+
+
+.pwd {
+    position: relative;
+}
+
+.p-viewer {
+    z-index: 9999;
+    position: absolute;
+    top: 30%;
+    right: 10px;
+}
+
+.fa-eye {
+    color: #000;
+}
+
+#senha {
+    padding-right: 30px;
+    /* Crie espaço à direita para acomodar o ícone do olho */
+    width: 80%;
+}
+
+.p-viewer,
+.p-viewer2 {
+    float: right;
+    margin-top: -55px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#botaologin {
+    cursor: pointer;
+    background: #86BAA0;
+    padding: 8px 5px;
+    color: #fff;
+    border: 1px solid #3274e7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: none;
+}
+
+#botaologin:hover {
+    background-color: #2d7250;
+    transition: background-color 0.3s ease;
+}
+
+#botaocadastro {
+    cursor: pointer;
+    background: #86BAA0;
+    padding: 8px 5px;
+    color: #fff;
+    border: 1px solid #3274e7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: none;
+}
+
+#botaocadastro:hover {
+    background-color: #2d7250;
+    transition: background-color 0.3s ease;
+}
+
+#logologin {
+    width: 180px;
+}
+
+#logologin1 {
+    width: 180px;
+
+}
+
+#titulo {
+    color: white;
+    padding: 20px;
+}
+
+#img-user {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 7px;
+}
+
+#img-email {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 7px;
+}
+
+#img-senha {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 7px;
+}
+
+#img-csenha {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 7px;
+    text-align: center;
+
+} 
+
+input{
+    color: white;
+}
+
+input[type="select"] {
+    background: #2d7250;
+    padding: 8px 5px;
+    color: #fff;
+    border: 1px solid #3274e7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: none;
+}
+
+#img-cargo {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 7px;
+
+}
+
+#text {
+    margin-right: 100px;
+    margin-left: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color: white;
+}
+
+#caderneta {
+    width: 400px;
+}
+
+.container {
+    height: 75%;
+    padding: 15px;
+    padding-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+}
+
+.cadastre-se {
+    text-decoration: none;
+    color: #2d7250;
+    padding-top: 20px;
+}
+
+.esqueceur {
+    text-decoration: none;
+    padding-top: 0;
+    margin: 0;
+    color: #2d7250;
+}
+
+#logintitulo {
+    padding-top: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.formzao {
+    width: 300px;
+    border-radius: 20px;
+
+}
+
+.lado-esq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.lado-dir {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#cadastro-form {
+    width: fit-content;
+    margin: 30px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-caderneta {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type="select"] {
+    background: #CD90FE;
+    padding: 8px 5px;
+    color: #fff;
+    border: 1px solid #3274e7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: none;
+}
+
+/* Estilize o select para que fique no mesmo estilo que o input */
+select.formzao {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 6px solid #CD90FE;
+    border-radius: 20px;
+    background-color: #CD90FE;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo para a seta do select */
+select.formzao::-ms-expand {
+    display: none;
+}
+
+/* Estilo para o foco do select */
+select.formzao:focus {
+    border-color: #a25fda;
+}
+
+/* Estilo para as opções do select */
+select.formzao option {
+    background-color: #CD90FE;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo para o hover das opções do select */
+select.formzao option:hover {
+    background-color: #a25fda;
+}
+
+/* Estilos para telas menores (celulares) */
+@media (min-width: 120px) and (max-width: 467px) {
+    .lado-esq {
+        display: none;
+
+    }
+
+    body {
+        background: #a25fda !important;
+    }
+
+    #logologin {
+        align-items: center;
+    }
+
+    #logoLoginDir {
+        display: block;
+        width: 180px;
+    }
+
+    #tituloDir {
+        display: block;
+    }
+
+    .lado-dir {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 468px) {
+    .lado-esq {
+        display: none;
+
+    }
+
+    body {
+        background: #a25fda !important;
+    }
+
+    #logologin {
+        align-items: center;
+    }
+
+    #logoLoginDir {
+        display: block;
+        width: 180px;
+    }
+
+    #tituloDir {
+        display: block;
+    }
+
+    .lado-dir {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 469px) and (max-width:945px) {
+    .lado-esq {
+        display: none;
+    }
+
+    body {
+        background: #a25fda !important;
+    }
+
+}
+
+#logoLoginDir {
+    display: block;
+    width: 180px;
+}
+
+#tituloDir {
+    display: block;
+}
+
+.lado-dir {
+    flex-direction: column;
+}
+
+@media (min-width: 945px) {
+    #logoLoginDir {
+        display: none;
+    }
+
+    #tituloDir {
+        display: none;
+    }
+
+    #logologin {
+        align-items: center;
+        /* Oculta a logo nas telas menores (responsivas) */
+        display: none;
+    }
+
+}
+
+#botao-salvar-senha {
+    cursor: pointer;
+    background-color: #86BAA0;
+    padding: 8px 5px;
+    color: #fff;
+    border: 1px solid #3274e7;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: none;
+}
+
+#botao-salvar-senha:hover {
+    background-color:#2d7250;
+    ;
+    transition: background-color 0.3s ease;
+
+}
+
+.vparalogin {
+    text-decoration: none;
+}
+
+.vparalogin:hover {
+    color:  #2d7250;
+}
+
+.vparalogin {
+    padding-bottom: 20px;
+    color: #2d7250;
+}

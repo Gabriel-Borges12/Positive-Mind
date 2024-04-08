@@ -161,16 +161,17 @@ include 'conexao.php';
                     <h3>Gabriel Borges</h3>
                     <p>Product Owner</p>
                     <div class="icons">
-                        <a href="#">
+                        <a href="https://x.com/positivemindbr?s=21&t=NCfJWWvec0F2TialOt2tfg">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/gabriel-de-souza-borges/">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://github.com/Gabriel-Borges12">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#">
+                        <a
+                            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSHwsLGcjzTLpFDBdGLkBpvkFdwCTRZRtQRjKTGlnTbdXjdTcDZXHHnDvgrSdJNsNQSpfqSB">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -185,16 +186,16 @@ include 'conexao.php';
                     <h3>Mariane Letícia</h3>
                     <p>Desenvolvedora</p>
                     <div class="icons">
-                        <a href="#">
+                        <a href="https://x.com/positivemindbr?s=21&t=NCfJWWvec0F2TialOt2tfg">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/escolasenaitaubate/">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://github.com/marianeleticia">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -209,16 +210,16 @@ include 'conexao.php';
                     <h3>Leonardo Lopes</h3>
                     <p>Desenvolvedor</p>
                     <div class="icons">
-                        <a href="#">
+                        <a href="https://x.com/positivemindbr?s=21&t=NCfJWWvec0F2TialOt2tfg">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/escolasenaitaubate/">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://github.com/LeonardoNascimento7">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -232,16 +233,16 @@ include 'conexao.php';
                     <h3>Luis Augusto</h3>
                     <p>Desenvolvedor</p>
                     <div class="icons">
-                        <a href="#">
+                        <a href="https://x.com/positivemindbr?s=21&t=NCfJWWvec0F2TialOt2tfg">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/luis-silva-38980a26b/">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://github.com/Augustoluissilva?query=Gabriel-Borges12">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>

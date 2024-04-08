@@ -22,11 +22,11 @@ body {
 
 /* Adicione estas regras para deixar o navbar fixo */
 .navbar {
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     background-color: #86BAA0;
     color: #fff;
     /* position: fixed; */ /* Remove position fixed */

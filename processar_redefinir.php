@@ -3,7 +3,7 @@ include 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Receba o email do formulário
-    $email = $_POST['email'];
+    $usuario_email = $_POST['usuario_email'];
     $newPassword = $_POST['new_password'];
 
     // Criptografe a nova senha
@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo '<script>alert("Registro atualizado com sucesso!");</script>';
         echo '<script>
                 setTimeout(function(){
-                    window.location.href = "index.php";
-                }, 1); // Redireciona após 1 segundo
+                    window.location.href = "login.php";
+                }, 1); 
               </script>';
     } else {
         echo "Erro ao redefinir a senha: " . $conn->error;

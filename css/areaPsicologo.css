@@ -20,7 +20,7 @@ body {
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     width: 100%;
     background-color: #86BAA0;
     color: #fff;
@@ -52,7 +52,7 @@ body {
 #bem-vindo {
     margin-left: 20px;
     margin-bottom: 10px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     margin-top: 12px;
 }
 

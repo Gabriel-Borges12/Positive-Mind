@@ -56,7 +56,7 @@
 
               <p class="text">
                 Esqueceu sua senha?
-                <a href="redefinirsenha.php">Obtenha ajuda</a> para redefinir sua senha
+                <a href="novasenha.php">Obtenha ajuda</a> para redefinir sua senha
               </p>
             </div>
           </form>
