@@ -66,6 +66,7 @@ body {
     width: 300px;
     display: flex;
     justify-content: flex-end;
+    margin-right: 70px;
 }
 
 a {
@@ -116,6 +117,7 @@ a {
     max-width: 40%;
     border-radius: 15px;
     margin-left: 15%;
+    margin-top: 100px;
 }
 
 #conteudo p {
@@ -127,28 +129,46 @@ a {
 
 #container2 {
     background-color: #86BAA0;
-    padding: 100px;
-    margin: 300px auto;
+    padding: 15px;
+    margin: 90px auto;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#imagem {
+    width: 300px;
+    height: 450px;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: row;
+}
+
 .iconpsic {
-    width: 200px;
-    height: 200px;
+    width: 500px; 
+    height: 500px;
     align-items: center;
 }
 
-.mapBox {
-    position: relative;
+#mapBox {
+    position: center;
     width: 100%;
     margin: 0 auto;
     height: 500px;
     background: #fff;
 }
 
-.mapBox iframe {
+#mapBox iframe {
     width: 100%;
     height: 100%;
 }
@@ -156,7 +176,7 @@ a {
 .container-icons {
     display: flex;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 50px;
     margin-bottom: 50px;
     background-color: #86BAA0;
     padding: 65px;
@@ -164,7 +184,7 @@ a {
 }
 
 .container-icons img {
-    width: 70px;
+    width: 170px;
     height: auto;
     margin: 0 15px;
     align-self: center;
@@ -397,7 +417,15 @@ a {
 
 
 #fundoverde {
-    width: 50px ; 
-    height: auto ; 
-    align-items: right;
+    width: 300px;
+    height: auto;
+    float: right; 
+    margin-right: 100px;
+    margin-bottom: 20px; 
+}
+
+
+#proftext{
+    text-decoration: underline;
+    margin-top: 50px;
 }

@@ -45,13 +45,13 @@ $nome = $_SESSION['usuario_nome'];
                 <h2 id="bem-vindo">Seja bem-vindo a área dos psicólogos!</h2>
             </div>
             <h3 id="funcao" class="informacao" onclick="mostrarInformacao()">Você sabe qual a função de um psicólogo?</h3>
-            <img  src="./img/logoverdefundo.jpeg" alt="logo de fundo" class="fundoverde">
-        </div>
-    </div>
-
-    <div class="container">
-        <div id="conteudo" style="display: none;">
-            <p>Um psicólogo é um profissional da saúde mental que estuda o comportamento humano e os processos mentais. Ele utiliza diversas técnicas e abordagens terapêuticas para ajudar as pessoas a lidar com problemas emocionais, mentais e comportamentais.</p>
+            <div class="flex-content">
+                <div id="conteudo" style="display: none;">
+                    <p>Um psicólogo é um profissional da saúde mental que estuda o comportamento humano e os processos mentais. Ele utiliza diversas técnicas e abordagens terapêuticas para ajudar as pessoas a lidar com problemas emocionais, mentais e comportamentais.</p>
+                </div>
+                
+            </div>
+           
         </div>
     </div>
 
@@ -64,9 +64,10 @@ $nome = $_SESSION['usuario_nome'];
             <img src="./img/icon_pessoa.png" alt="Ícone 4" class="iconpsic">
         </div>
     </div>
-
-    <h3>Localize os locais mais próximos de você:</h3>
-    <div id="map" style="width: 800px; height: 700px;"></div>
+    <div class="container3">
+        <h3>Localize os locais mais próximos de você:</h3>
+        <div id="map" style="width: 800px; height: 700px;"></div>
+    </div>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
