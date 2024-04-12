@@ -98,7 +98,7 @@
 
               <p class="text">
                 Ao me inscrever na Positive Mind, concordo com os
-                <a href="#">Termos de Serviço</a> e
+                <a href="img/Termos.pdf">Termos de Serviço</a> e
                 <a href="#">Política de Privacidade</a>
               </p>
             </div>
