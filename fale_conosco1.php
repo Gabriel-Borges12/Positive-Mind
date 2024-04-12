@@ -2,7 +2,6 @@
 session_start();
 include 'conexao.php';
 
-$nome = $_SESSION['usuario_nome'];
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +30,7 @@ $nome = $_SESSION['usuario_nome'];
         </span>
 
         <a href="comunidade.php" class="nav-home">Comunidade</a>
-        <a href="logout.php" class="nav-home">Sair</a>
+
     </header>
 
 

@@ -187,16 +187,18 @@ h3 {
   }
   .second-part:hover {
     color: #1a693b;
-  }
-  #botaao {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 70%;
-    max-width: 500px;
-    margin-left: 600px;
-  }
+   }
+    #botaao {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 70%;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o conteúdo */
+        margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+        margin-bottom: 50px; /* Ajuste a margem inferior conforme necessário */
+    }
   h4 {
     color: #1a693b;
     margin-bottom: 10px;
@@ -540,6 +542,7 @@ input[type="text"] {
 
 /*Responsivo*/
 /*768PX BREAKPOINT*/
+
 @media (min-width:48em) {
     .colfooter {
         width: 30%;
@@ -551,4 +554,97 @@ input[type="text"] {
         margin-right: 0;
         border-right: 0;
     }
+}
+
+/* Responsivo */
+/* 768px de largura de tela */
+@media (min-width: 48em) {
+    .colfooter {
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+
+    .colfooter:nth-of-type(3n+0) {
+        margin-right: 0;
+        border-right: 0;
+    }
+
+    .containerBloco {
+        width: 200px;
+    }
+
+    .container-wrapper {
+        margin-left: 80px;
+    }
+
+    #botaao {
+        margin-left: 20%;
+    }
+}
+
+/* 1024px de largura de tela */
+@media (min-width: 64em) {
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .estrutura-logo {
+        margin-right: 20px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .nav-usuario {
+        font-size: 18px;
+    }
+
+    #links {
+        margin-right: 20px;
+    }
+
+    .nav-home {
+        margin-right: 15px;
+    }
+
+    .transtornos-sobre {
+        margin-left: 80px;
+    }
+
+    #searchResults {
+        margin-top: 30px;
+    }
+
+    .main_footer .content {
+        width: 70%;
+        margin: 0 15%;
+        padding: 3em 0;
+    }
+
+    .colfooter {
+        width: 25%;
+        margin-right: 6%;
+    }
+
+    .colfooter ul li {
+        padding: 0.5em 0em;
+    }
+
+    .botao {
+        padding: 12px 15px;
+    }
+
+    .main_footer_copy {
+        width: 70%;
+        margin: 0 15%;
+        padding: 2em 0;
+    }
+
+    #botaao {
+        width: 60%; /* Ajusta a largura para ocupar a largura total */
+    }
+
+
 }

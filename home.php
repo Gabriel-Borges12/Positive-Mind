@@ -43,7 +43,7 @@ $nome = $_SESSION['usuario_nome'];
     </div>
 
     <div class="frasetrocando" style="display: inline_block">
-        <h3 id="animacao-aqui">Pode parecer que você está sozinho, mas isso não é verdade.</h3>
+        <h3 id="animacao-aqui">Você não está sozinho.</h3>
     </div>
 
     <script>

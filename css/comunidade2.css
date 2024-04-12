@@ -14,41 +14,24 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-
 /* Adicione esta regra para separar os links do navbar */
 .nav-links a {
-    margin-right: 20px;
+    margin-right: 10px; /* Reduzido o espaçamento entre os links do navbar */
 }
 
-/* Adicione estas regras para deixar o navbar fixo */
 .navbar {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
-    /* padding: 0 20px; */
+    justify-content: space-evenly;
     background-color: #86BAA0;
     color: #fff;
-    /* position: fixed; */ /* Remove position fixed */
-    /* top: 0; */ /* Remove top property */
-    /* left: 0; */ /* Remove left property */
-    /* width: 100%; */ /* Remove width property */
-    /* z-index: 1000; */ /* Remove z-index property */
 }
 
 /* Adicione esta regra para ajustar o conteúdo abaixo do navbar */
 .main-content {
-    padding-top: 100px; /* Altura do navbar */
+    padding-top: 100px; /* Ajuste do conteúdo abaixo do navbar */
 }
-
-/* Navbar */
-/* .navbar {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-} */
-
 
 
 .estrutura-logo {
@@ -428,8 +411,27 @@ a {
 }
 .titulo {
     font-size: 30px;
-    align-items: center;
     text-align: center;
+}
+
+.comment-section {
+    padding: 0 1rem;
+    max-width: 100%; /* Ajuste da largura máxima */
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.comment {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-areas:
+        "score user controls"
+        "score comment comment"
+        "score comment comment";
+    grid-template-columns: auto 1fr auto;
+    gap: 1.5rem;
+    row-gap: 1rem;
+    color: var(--Grayish-Blue);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
@@ -636,49 +638,44 @@ button:hover{
     display: flex;
 }
 
-@media screen and (max-width:640px) {
-    .container{
-        padding: .75rem;
-    }
-    .replies{
-        padding-left: 1rem;
-        margin-left: .5rem;
-    }
-    .comment{
-        grid-template-areas: 
+@media (max-width: 640px) {
+    /* Ajustes para telas menores */
+    .comment {
+        grid-template-areas:
             "user user user"
             "comment comment comment"
-            "score ... controls"
-        ;
-
-        gap: .5rem;
+            "score ... controls";
+        gap: 0.5rem;
     }
-    .c-score{
+
+    .c-score {
         flex-direction: row;
         width: auto;
     }
-    .reply-input{
-        grid-template-areas: 
+
+    .reply-input {
+        grid-template-areas:
             "input input input"
-            "avatar ... button"
-        ;
+            "avatar ... button";
         grid-template-rows: auto min-content;
         align-items: center;
-        gap: .5rem;
+        gap: 0.5rem;
     }
-    .reply-input img{
+
+    .reply-input img {
         height: 2rem;
         width: 2rem;
     }
-    .reply-input textarea{
+
+    .reply-input textarea {
         height: 6rem;
-        padding: .5rem;
+        padding: 0.5rem;
         align-self: stretch;
     }
 }
 
-
-.modal-wrp{
+/* Modal */
+.modal-wrp {
     position: fixed;
     top: 0;
     left: 0;
@@ -687,45 +684,49 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.modal{
+.modal {
     padding: 1.5rem;
     max-width: 32ch;
     display: grid;
     gap: 1rem;
-    grid-template-areas: 
-    "heading heading"
-    "body body"
-    "no yes";
+    grid-template-areas:
+        "heading heading"
+        "body body"
+        "no yes";
 }
 
-.invisible{
+.invisible {
     display: none;
 }
 
-.modal h3{
+.modal h3 {
     grid-area: heading;
     color: var(--Dark-blue);
 }
-.modal button{
+
+.modal button {
     color: var(--White);
-    padding: .75rem;
+    padding: 0.75rem;
     border-radius: 8px;
     border: none;
     font-weight: 500;
 }
-.modal p{
+
+.modal p {
     grid-area: body;
     color: var(--Grayish-Blue);
     line-height: 1.5;
 }
-.modal .yes{
+
+.modal .yes {
     grid-area: yes;
     background-color: var(--Moderate-blue);
 }
-.modal .no{
+
+.modal .no {
     background-color: var(--Grayish-Blue);
     grid-area: no;
 }
