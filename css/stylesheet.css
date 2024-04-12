@@ -1,4 +1,4 @@
-  a {
+a {
     text-decoration: none;
     font-weight: bold;
     background: linear-gradient(135deg, #5EAF6D 0%, #7ABA5E 100%);
@@ -236,11 +236,11 @@ background-color: #1C5739;
     text-align: center;
     margin-top: 50px;
     color: #000; /* Cor do texto para melhor contraste */
-    width: 50px; /* Largura máxima do texto */
+    max-width: 550px; /* Largura máxima do texto */
     word-wrap: break-word; /* Quebra de palavras */
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 20px; /* Adicionado para espaçamento interno */
-}
+  }
 
 .textoParagrafos {
     color: white;
@@ -263,12 +263,10 @@ background-color: #1C5739;
     padding: 20px;
     position: relative; 
 }
-
 #mulherpensando {
-    width: 70%;
-    height: 70%;
-    margin-top: 80px;
-    margin-left: 180px;
+    width: 90%;
+    height: auto; /* Altura automática para manter proporção */
+    margin: 50px auto; /* Centraliza horizontalmente */
 }
 
 
@@ -584,4 +582,207 @@ background-color: #1C5739;
     }
 }
 
-/* footer */
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .navSpace {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .estrutura-logo {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .nav-home {
+        margin: 10px;
+    }
+
+    #bannerPrincipal {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .sobreSaude {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    .containerBloco {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .recursosSite {
+        padding: 20px;
+    }
+
+    .quadradoFundo {
+        width: 90%;
+    }
+
+    .card {
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .main_footer .content {
+        width: 90%;
+        margin: 0 5%;
+        padding: 2em 0;
+    }
+
+    .colfooter {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .botao {
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 150px;
+    }
+
+    .nav-home {
+        margin: 5px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .sobreSaude {
+        margin-top: 50px;
+    }
+
+    #bannerPrincipal {
+        margin-top: 10px;
+    }
+
+    #textoTitulo {
+        margin-top: 150px;
+        padding-top: 100px;
+    }
+
+    .containerBloco {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .flex-conteudo {
+        flex-direction: column;
+    }
+
+    #mulherpensando {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #textoTitulo2 {
+        margin-top: 30px;
+    }
+
+    .main_footer .content {
+        padding: 1em 0;
+    }
+
+    .colfooter {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .botao {
+        font-size: 0.7em;
+        padding: 6px 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #textoTitulo {
+        margin-top: 150px;
+        padding-top: 100px;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    
+    #mulherpensando {
+        width: 90%;
+        height: auto; /* Altura automática para manter proporção */
+        margin: 20px auto; /* Centraliza horizontalmente */
+        }
+    }
+
+@media screen and (max-width: 480px) {
+    #textoTitulo {
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+
+    #mulherpensando {
+        width: 100%;
+        height: auto; /* Altura automática para manter proporção */
+        margin: 20px auto; /* Centraliza horizontalmente */
+    }
+}
+
+/* Adicionando estilos para telas menores */
+@media screen and (max-width: 768px) {
+    #textoParagrafo {
+      max-width: 90%;
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #textoParagrafo {
+      max-width: 90%;
+      padding: 10px;
+      margin-top: 30px; /* Ajuste de margem para telas menores */
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #textoParagrafo {
+        max-width: 90%;
+        padding: 10px;
+        margin-top: 30px; /* Ajuste de margem para telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .quadradoFundo {
+        width: 90%;
+        margin-left: auto; /* Centraliza horizontalmente */
+        margin-right: auto; /* Centraliza horizontalmente */
+    }
+
+    .card {
+        margin-left: auto; /* Centraliza horizontalmente */
+        margin-right: auto; /* Centraliza horizontalmente */
+        width: 90%;
+        padding: 20px;
+    }
+
+    .botao {
+        font-size: 0.7em;
+        padding: 6px 8px;
+    }
+}
+
+
+
+
+
