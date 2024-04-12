@@ -34,7 +34,7 @@ $nome = $_SESSION['usuario_nome'];
         </div>
         <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
         <div id="links">
-            <a href="home.php" class="nav-home">InÍcio</a>
+            <a href="home.php" class="nav-home">Início</a>
             <a href="comunidade.php" class="nav-home">Comunidade</a>
             <a href="" class="nav-home">Sair</a>
         </div>
@@ -110,7 +110,7 @@ $nome = $_SESSION['usuario_nome'];
 
                 <ul>
 
-                    <li><a href="index.php" title="Página Inícial">Página Inícial</a></li>
+                    <li><a href="index.php" title="Página Inicial">Página Inicial</a></li>
                     <li><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></li>
                     <li><a href="comunidade.php" title="Comunidade">Comunidade</a></li>
                     <li><a href="fale_conosco1" title="Fale Conosco">Fale Conosco</a></li>
