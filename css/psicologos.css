@@ -343,92 +343,48 @@ h3 {
     margin-right: 3px;
     color: #327B56;
 }
-
-/*Responsivo*/
-/*768PX BREAKPOINT*/
-@media (min-width:48em) {
-    .colfooter {
-        width: 30%;
-        margin-right: 5%;
-        margin-bottom: 0;
-    }
-
-    .colfooter:nth-of-type(3n+0) {
-        margin-right: 0;
-        border-right: 0;
-    }
-}
-
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#botaao{
-    width: 200px;
-    height: 100px;
- 
-}
-
-h4 {
-    margin-top: 0;
-    font-size: 24px;
-    color: #333;
-}
-
-input[type="text"] {
-    width: calc(100% - 90px);
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 2px solid #007bff;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus {
-    border-color: #0056b3;
-    outline: none;
-}
-
-button {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#searchResults {
+/* Estilo para o container2 */
+#container2 {
+    text-align: center;
     margin-top: 20px;
 }
 
-.result {
-    margin-bottom: 20px;
+.container-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.result a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+.iconpsic {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
 }
-
-.result a:hover {
-    text-decoration: underline;
+/* Adicione a seguir as regras de mídia para responsividade */
+    @media screen and (max-width: 768px){}
+.container-icons {
+    display: flow-root;
+    padding: 20px;
 }
+    #container2 {
+        display: flex;
+        justify-content: center; /* Centralizar horizontalmente */
+        align-items: center; /* Centralizar verticalmente */
+        flex-wrap: wrap; /* Garantir que os ícones fiquem em uma linha */
+    }
 
-.result p {
-    margin-top: 5px;
-    color: #666;
+    .container3 {
+        text-align: center; /* Centralizar o mapa */
+    }
+
+    #map {
+        max-width: 100%; /* Para garantir que o mapa não ultrapasse a largura máxima do dispositivo */
+    }
+
+
+        body {
+            overflow-x: hidden;
+        }
+            }
+    
 }
