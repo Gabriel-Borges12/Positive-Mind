@@ -73,7 +73,7 @@ a {
 
 /* Responsivo - Ajuste de margem para dispositivos menores */
 @media (max-width: 768px) {
-    .container-frase-do-dia {
+    .container-frases {
         max-width: 90%; /* Ajustando a largura para 90% em telas menores */
     }
 }
