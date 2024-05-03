@@ -3,55 +3,104 @@ session_start();
 include 'conexao.php';
 
 // Verificar se o usuário está logado
-if(isset($_SESSION['usuario_id'])) {
-    $usuario_id = $_SESSION['usuario_id'];
-
-    // Recuperar nome do usuário
-    $sql = "SELECT usuario_nome FROM usuarios WHERE usuario_id = $usuario_id";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        // Exibir o nome do usuário
-        $row = $result->fetch_assoc();
-        $nome_usuario = $row["usuario_nome"];
-    } else {
-        $nome_usuario = "Usuário desconhecido";
-    }
-} else {
-    // Redirecionar para a página de login se o usuário não estiver logado
+if (!isset($_SESSION['usuario_id'])) {
     header("Location: login.php");
     exit;
 }
 
-// Verificar se o formulário foi enviado
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Verificar se o comentário não está vazio
-    if (!empty($_POST["comment"])) {
-        // Preparar o comentário para ser inserido no banco de dados
-        $comentario = $_POST["comment"];
+$usuario_id = $_SESSION['usuario_id'];
 
-        // Inserir o comentário na tabela de comentários
-        $sql = "INSERT INTO comentarios (usuario_id, comentario, data) VALUES ('$usuario_id', '$comentario', NOW())";
+// Recuperar nome do usuário
+$sql = "SELECT usuario_nome FROM usuarios WHERE usuario_id = $usuario_id";
+$result = $conn->query($sql);
+$nome_usuario = ($result->num_rows > 0) ? $result->fetch_assoc()["usuario_nome"] : "Usuário desconhecido";
 
-        if ($conn->query($sql) === TRUE) {
-            // Comentário inserido com sucesso
-            echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
-            echo "<script>swal('Comentário enviado com sucesso!', '', 'success');</script>";
-        } else {
-            echo "Erro ao enviar o comentário: " . $conn->error;
-        }
+// Função para responder a um comentário
+function responderComentario($conn, $comentario_id, $resposta) {
+    // Inserir a resposta na tabela de respostas
+    $sql = "INSERT INTO respostas_comentarios (comentario_id, resposta, data) VALUES ('$comentario_id', '$resposta', NOW())";
+    if ($conn->query($sql) === TRUE) {
+        echo "<script>alert('Resposta enviada com sucesso!');</script>";
     } else {
-        echo "<p>O comentário não pode estar vazio.</p>";
+        echo "Erro ao enviar a resposta: " . $conn->error;
     }
 }
 
+// Verificar se o formulário foi enviado para responder a um comentário
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["responder_comentario"])) {
+    $comentario_id = $_POST['comentario_id'];
+    $resposta = $_POST['resposta'];
+    responderComentario($conn, $comentario_id, $resposta);
+}
+
+// Verificar se o formulário foi enviado para adicionar um novo comentário
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["comment"])) {
+    $comentario = $_POST["comment"];
+
+    // Inserir o comentário na tabela de comentários
+    $sql = "INSERT INTO comentarios (usuario_id, comentario, data) VALUES ('$usuario_id', '$comentario', NOW())";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+        echo "<script>swal('Comentário enviado com sucesso!', '', 'success');</script>";
+    } else {
+        echo "Erro ao enviar o comentário: " . $conn->error;
+    }
+}
+
+// Verificar se o formulário foi enviado para editar um comentário
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["edit_comment"])) {
+    $comment_id = $_POST['comment_id'];
+    $edited_comment = $_POST['edited_comment'];
+
+    // Verificar se o comentário pertence ao usuário logado
+    $sql = "SELECT * FROM comentarios WHERE id = $comment_id AND usuario_id = $usuario_id";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        $sql = "UPDATE comentarios SET comentario = '$edited_comment' WHERE id = $comment_id";
+        if ($conn->query($sql) === TRUE) {
+            echo "<script>alert('Comentário editado com sucesso!');</script>";
+        } else {
+            echo "Erro ao editar o comentário: " . $conn->error;
+        }
+    } else {
+        echo "<script>alert('Você não tem permissão para editar este comentário.');</script>";
+    }
+}
+
+// Verificar se o formulário foi enviado para excluir um comentário
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["delete_comment"])) {
+    $comment_id = $_POST['comment_id'];
+
+    // Verificar se o comentário pertence ao usuário logado
+    $sql = "SELECT * FROM comentarios WHERE id = $comment_id AND usuario_id = $usuario_id";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        $sql = "DELETE FROM comentarios WHERE id = $comment_id";
+        if ($conn->query($sql) === TRUE) {
+            echo "<script>alert('Comentário excluído com sucesso!');</script>";
+        } else {
+            echo "Erro ao excluir o comentário: " . $conn->error;
+        }
+    } else {
+        echo "<script>alert('Você não tem permissão para excluir este comentário.');</script>";
+    }
+}
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>Aba de Comunidade</title>
-    <link rel="stylesheet" href="./css/ccomunidade.css">
+    <link rel="stylesheet" href="./css/comunidade.css">
+    <style>
+        .respostas {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -60,20 +109,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Comentários:</h2>
         <?php
         // Exibir todos os comentários
-        $sql = "SELECT c.comentario, c.data, u.usuario_nome FROM comentarios c JOIN usuarios u ON c.usuario_id = u.usuario_id ORDER BY c.data DESC";
-
+        $sql = "SELECT c.id, c.comentario, c.data, u.usuario_nome, c.usuario_id FROM comentarios c JOIN usuarios u ON c.usuario_id = u.usuario_id ORDER BY c.data DESC";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                // Formatando a data para o formato brasileiro
                 $data_formatada = date("d/m/Y H:i:s", strtotime($row["data"]));
                 
                 echo "<div class='comment-box'>";
                 echo "<p class='user'>" . $row["usuario_nome"] . "</p>";
                 echo "<p>" . $row["comentario"] . "</p>";
                 echo "<p>Data: " . $data_formatada . "</p>";
-                echo "</div>";
+
+                // Exibir respostas a este comentário
+                $comment_id = $row["id"];
+                $sql_respostas = "SELECT * FROM respostas_comentarios WHERE comentario_id = $comment_id";
+                $result_respostas = $conn->query($sql_respostas);
+                if ($result_respostas->num_rows > 0) {
+                    echo "<div class='respostas'>";
+                    echo "<p><strong>Respostas:</strong></p>";
+                    while ($row_resposta = $result_respostas->fetch_assoc()) {
+                        echo "<p>" . $row_resposta['resposta'] . "</p>";
+                    }
+                    echo "</div>";
+                }
+
+                // Formulário para responder ao comentário
+                echo "<form action='" . htmlspecialchars($_SERVER["PHP_SELF"]) . "' method='post'>";
+                echo "<input type='hidden' name='comentario_id' value='" . $row["id"] . "'>";
+                echo "<textarea name='resposta' placeholder='Responda aqui'></textarea>";
+                echo "<button type='submit' name='responder_comentario'>Responder</button>";
+                echo "</form>";
+
+                // Botões de edição e exclusão (apenas para comentários do usuário logado)
+                if ($row["usuario_id"] == $usuario_id) {
+                    echo "<form action='" . htmlspecialchars($_SERVER["PHP_SELF"]) . "' method='post'>";
+                    echo "<input type='hidden' name='comment_id' value='" . $row["id"] . "'>";
+                    echo "<input type='text' name='edited_comment' value='" . $row["comentario"] . "'>";
+                    echo "<button type='submit' name='edit_comment'>Editar</button>";
+                    echo "<button type='submit' name='delete_comment'>Excluir</button>";
+                    echo "</form>";
+                }
+
+                echo "</div>"; // Fechamento de .comment-box
             }
         } else {
             echo "<p class='error'>Ainda não há comentários.</p>";
