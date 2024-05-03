@@ -1,8 +1,78 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* padding: 0 20px; */
+    width: 100%;
+    background-color: #86BAA0;
+    color: #fff;
+}
+
+.estrutura-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+/* Paragraphs */
+.paragrafos {
+    padding: 20px;
+}
+
+#bem-vindo {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    /* text-decoration: underline; */
+    margin-top: 12px;
+}
+
+#funcao {
+    margin-left: 150px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.imagem {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    justify-content: flex-end;
+    margin-left: 70px;
+}
+
+#links {
+    /* margin-left: 50%; */
+    justify-content: center;
 }
 
 .container {
@@ -12,7 +82,7 @@ body {
 }
 
 .comment-box {
-    background-color: #fff;
+    background-color: #f9f9f9; /* Alterado para uma cor mais clara */
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -21,23 +91,16 @@ body {
 }
 
 .comment-box p {
-    margin: 0;
+    margin: 10px 0; /* Adicionado espaço entre os parágrafos */
     line-height: 1.5;
 }
 
-.comment-box .user {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
 .comment-actions {
-    margin-top: 10px;
+    margin-top: 15px; /* Aumentado o espaço acima dos botões */
 }
 
-.comment-actions a {
-    margin-right: 10px;
-    color: #007bff;
-    text-decoration: none;
+.comment-actions button {
+    margin-right: 10px; /* Espaçamento entre os botões */
 }
 
 .add-comment {
@@ -60,8 +123,8 @@ body {
 }
 
 .add-comment input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #60bb63; /* Verde */
+    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -70,7 +133,7 @@ body {
 }
 
 .add-comment input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #346336; /* Verde mais escuro no hover */
 }
 
 .respostas {
@@ -78,11 +141,105 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 20px; /* Aumentado o espaço entre os comentários e as respostas */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .respostas p {
-    margin: 0;
+    margin: 10px 0; /* Adicionado espaço entre os parágrafos */
     line-height: 1.5;
+}
+
+
+
+/* Botão "Responder Comentário" */
+.comment-box form button[name="responder_comentario"] {
+    background-color: #6cc481; /* Verde mais claro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.comment-box form button[name="responder_comentario"]:hover {
+    background-color: #59a66b; /* Verde mais escuro no hover */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+/* Botão "Editar Comentário" */
+.comment-box form button[name="edit_comment"] {
+    background-color: #6cc481; /* Verde médio */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.comment-box form button[name="edit_comment"]:hover {
+    background-color: #59a66b; /* Verde mais escuro no hover */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+/* Botão "Excluir Comentário" */
+.comment-box form button[name="delete_comment"] {
+    background-color: #6cc481; /* Verde mais escuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.comment-box form button[name="delete_comment"]:hover {
+    background-color: #59a66b; /* Verde mais escuro no hover */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+/* Botão "Postar Comentário" */
+.add-comment input[type="submit"] {
+    background-color: #6cc481; /* Verde claro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.add-comment input[type="submit"]:hover {
+    background-color: #59a66b; /* Verde mais escuro no hover */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espaçamento entre os botões */
 }
