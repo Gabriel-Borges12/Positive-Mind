@@ -201,7 +201,7 @@
                             <div class="testimonial__profile">
                                
                                 <div class="testimonial__info">
-                                    <h4 class="testimonial__name"> Mariane Ferreira</h4>
+                                    <h4 class="testimonial__name"> Mariane Moreira</h4>
                                     <h4 class="testimonial__title">Psico-terapeuta</h4>
                                 </div>
                             </div>
