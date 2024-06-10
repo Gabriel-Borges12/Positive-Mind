@@ -277,7 +277,7 @@
                 <div class="footer__contact">
                     <h5 class="footer__contact__title">Positive Mind</h5>
                     <span>Escreva um e-mail para nós</span>
-                    <a href="mailto:positivemindhealther@gmail.com" class="email">positivemindhealther@gmail.com</a>
+                    <a href="mailto:positivemindhealther@gmail.com" class="email">Escreva-nos um e-mail.</a>
                 
                 </div>
             </div>
