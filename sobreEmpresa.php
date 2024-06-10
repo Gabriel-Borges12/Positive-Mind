@@ -65,9 +65,10 @@
   <section class="section__container explore__container" id="explore">
     <div class="explore__content">
       <h2 class="section__header">
-       Quem<br />nós somos?
+        Quem<br />nós somos?
       </h2>
-      <a href="https://linktr.ee/gcsborges" title="Nos conheça melhor!" target="_blank" class="btn">Nos conheça melhor!</a>
+      <a href="https://linktr.ee/gcsborges" title="Nos conheça melhor!" target="_blank" class="btn">Nos conheça
+        melhor!</a>
     </div>
     <div class="explore__wrapper">
       <div class="explore__wrapper-inner">
@@ -218,7 +219,8 @@
           <span><i class="ri-arrow-down-s-line"></i></span>
         </div>
         <div class="faq__content">
-          Você pode acessar artigos sobre saúde mental navegando até a seção "Recursos" e ir até "Entenda sobre Transtornos" do nosso site. Lá,
+          Você pode acessar artigos sobre saúde mental navegando até a seção "Recursos" e ir até "Entenda sobre
+          Transtornos" do nosso site. Lá,
           você encontrará uma variedade de artigos informativos sobre diferentes tópicos de saúde mental, incluindo
           ansiedade, depressão, técnicas de autocuidado e muito mais.
         </div>
@@ -230,8 +232,8 @@
     <div class="section__container footer__container">
       <h2 class="section__header">Positive Mind</h2>
       <div class="footer__socials">
-        <a href="#"><i class="ri-facebook-fill"></i></a>
-        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="mailto:positivemindhealther@gmail.com"><i class="ri-mail-fill"></i></a>
+        <a href="https://x.com/PositiveMindBR"><i class="ri-close-fill"></i></a>
         <a href="https://www.instagram.com/positive_mindbrasil/"><i class="ri-instagram-fill"></i></a>
       </div>
       <ul class="footer__links">
@@ -239,7 +241,7 @@
         <li><a href="#travel">Nossas características</a></li>
         <li><a href="#discover">Contato</a></li>
         <li><a href="#client">Autoconhecimento</a></li>
-        <li><a href="#faq">Dúidas frequentes</a></li>
+        <li><a href="#faq">Dúvidas frequentes</a></li>
       </ul>
     </div>
     <div class="footer__bar">
