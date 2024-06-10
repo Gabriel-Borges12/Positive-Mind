@@ -103,8 +103,9 @@
             Ao acessar e utilizar nosso site, você concorda em cumprir e ficar vinculado aos seguintes termos de uso.
           </p>
           <a href="img/Termos.pdf" title="Termos de Uso" target="_blank" class="btn">Termos de uso</a>
-        </div>
-        <img src="assets/plan.png" alt="plan" />
+          </div>
+        <img src="assets/imagemTermos2.png" alt="plan" />
+        
       </div>
       <div class="discover__guide">
         <div class="discover__guide__content">

@@ -356,6 +356,8 @@ nav {
 .discover__plan img {
   transform: translateX(2rem);
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+  height: 400px;
+  width: 400px;
 }
 
 .discover__guide {
