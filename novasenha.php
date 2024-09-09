@@ -1,63 +1,90 @@
 <?php
 session_start();
 include 'conexao.php';
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/redefinirasenha.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href=" ./img/icone-cerebro.png">
-    <title>Redefinir senha</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redefinir Senha</title>
+  <link rel="stylesheet" href="./css/redefinirasenha.css" />
+  <link rel="shortcut icon" type="image/png" href="./img/mind-logo.ico">
+  <link rel="icon" href="./img/icone-cerebro.png">
 </head>
 
 <body>
-    <div class="main">
-        <div class="lado-dir">
-            <div class="logo-responsiva">
+  <main>
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form action="processar_redefinicao.php" method="POST" autocomplete="off" class="reset-form">
+            <div class="logo">
+              <img src="./img/logo-site.png" alt="Positive Mind" />
+              <h4>Positive Mind</h4>
             </div>
-            <div class="container">
-                <form action="processar_redefinir.php" id="cadastro-form" method="post">
-                    <h1 id="logintitulo">Esqueceu sua senha?</h1>
-                    <p>Para redefinir sua senha, digite o nome de</p>
-                    <p> usuário que você usa para fazer login no </p>
-                    <p> Positive Mind, e crie uma senha nova.</p>
-                    <br><br>
-                    <img id="img-user" src="img/user.png">
-                    <input type="email" name="usuario_email" class="formzao" placeholder="Seu email">
-                    <br><br>
-                    <img id="img-senha" src="img/senha.png">
-                    <input type="password" class="formzao" name="usuario_senha" placeholder="Senha" id="senha">
-                    <i class="fa-regular fa-eye" id="show-password"></i>
-                    <br><br>
-                    <input type="submit" value="Salvar nova senha" id="botao-salvar-senha">
-                    <br><br>
-                    <a class="vparalogin" href="login.php">Voltar ao login</a>
 
-                    <script>
-                        const senhaInput = document.getElementById("senha");
-                        const showPasswordIcon = document.getElementById("show-password");
-
-                        showPasswordIcon.addEventListener("click", () => {
-                            if (senhaInput.type === "password") {
-                                senhaInput.type = "text";
-                            } else {
-                                senhaInput.type = "password";
-                            }
-                        });     
-                    </script>
-                </form>
+            <div class="heading">
+              <h2>Redefinir Senha</h2>
+              <h6>Por favor, insira seu novo password abaixo.</h6>
             </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="password" name="nova_senha" class="input-field" autocomplete="off" required />
+                <label>Nova Senha</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="password" name="confirmar_senha" class="input-field" autocomplete="off" required />
+                <label>Confirmar Senha</label>
+              </div>
+
+              <input type="hidden" name="redefinir" value="1">
+              <input type="submit" value="REDEFINIR" class="sign-btn" />
+              <!-- Exibir mensagem de erro se houver -->
+              <?php if (isset($erro_redefinicao)) echo "<p class='error'>$erro_redefinicao</p>"; ?>
+            </div>
+          </form>
+
+          <!-- Link de Voltar para a Página Anterior -->
+          <div class="back-link">
+            <p><a href="login.php">Voltar para a página de login</a></p>
+          </div>
         </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="./img/Forgot.png" class="image img-1 show" alt="" />
+            <img src="./img/Secure.png" class="image img-2" alt="" />
+            <img src="./img/fotoaaa.png" class="image img-3" alt="" />
+          </div>
+
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Priorize sua saúde mental</h2>
+                <h2>Você merece se sentir bem</h2>
+                <h2>Estamos juntos nessa jornada</h2>
+              </div>
+            </div>
+
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+              <span data-value="2"></span>
+              <span data-value="3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </main>
+
+  <!-- Javascript file -->
+  <script src="login.js"></script>
 </body>
 
 </html>
