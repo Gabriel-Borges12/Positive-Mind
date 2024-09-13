@@ -35,8 +35,8 @@ $nome = $_SESSION['usuario_nome'];
         <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
         <div id="links">
             <a href="home.php" class="nav-home">Início</a>
-            <a href="comunidade.php" class="nav-home">Comunidade</a>
-            <a href="" class="nav-home">Sair</a>
+            <a href="comunidade.php" class="nav-home">Quiz</a>
+            <a href="./logout.php" class="nav-home">Sair</a>
         </div>
     </header>
 

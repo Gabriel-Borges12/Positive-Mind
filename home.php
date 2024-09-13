@@ -33,7 +33,7 @@ $nome = $_SESSION['usuario_nome'];
         </div>
         <span class="nav-usuario">Bem-vindo (a), <?php echo $_SESSION['usuario_nome']; ?></span>
 
-        <a href="comunidade.php" class="nav-home">Comunidade</a>
+        <a href="comunidade.php" class="nav-home">Quiz</a>
         <a href="sobreEmpresa.php" class="nav-home">Quem somos?</a>
         <a href="./logout.php" class="nav-home">Sair</a>
     </header>
@@ -82,8 +82,8 @@ $nome = $_SESSION['usuario_nome'];
                 <a href="comunidade.php" class="button-grid">Acessar</a>
             </div>
             <div class="grid-areas">
-                <h3>Comunidade</h3>
-                <p>Converse e relate com outras pessoas suas experiências.</p>
+                <h3>Mitos e verdades</h3>
+                <p>Descubra mitos e verdades relacionados a área de saúde mental.</p>
             </div>
         </div>
         <div class="motivacao">
