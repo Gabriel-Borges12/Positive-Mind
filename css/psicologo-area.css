@@ -20,10 +20,11 @@ body {
     height: 80px;
     display: flex;
     align-items: center;
-    /* padding: 0 20px; */
+    padding: 0 20px;
     width: 100%;
     background-color: #86BAA0;
     color: #fff;
+    justify-content: space-between;
 }
 
 .estrutura-logo {
@@ -73,13 +74,13 @@ a {
     text-decoration: none;
     color: #fff;
     justify-content: flex-end;
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
-#links {
-    /* margin-left: 50%; */
-    justify-content: center;
-}
+/* #links {
+    margin-left: 50%;
+    justify-content: space-between;
+} */
 
 .container1 {
     margin-top: 3%;

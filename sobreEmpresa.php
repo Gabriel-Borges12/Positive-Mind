@@ -12,41 +12,43 @@
 </head>
 
 <body>
-  <header class="header" id="home">
-    <div class="section__container header__container">
-      <nav>
-        <div class="nav__menu__btn" id="menu-btn">
-          <span><i class="ri-menu-2-line"></i></span>
-          <h4>Menu</h4>
-        </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#home">Sobre</a></li>
-          <li><a href="#travel">Nossas características</a></li>
-          <li><a href="#discover">Contato</a></li>
-          <li><a href="#client">Jornada de autoconhecimento</a></li>
-          <li><a href="#faq">Dúvidas frequentes</a></li>
-        </ul>
-      </nav>
-      <div class="header__image">
-        <img src="assets/imagemCelular.png" alt="header" />
+<header class="header" id="home">
+  <div class="section__container header__container">
+    <nav>
+      <div class="nav__menu__btn" id="menu-btn">
+        <span><i class="ri-menu-2-line"></i></span>
+        <h4>Menu</h4>
       </div>
-      <div class="header__content">
-        <h1>Conheça nossa<br />empresa</h1>
-        <p class="section__description">
-          Trabalhamos de forma colaborativa para garantir que nossos clientes recebam o melhor tratamento e suporte
-          possível.
-        </p>
-        <div class="header__btns">
-          <a href="#">
-            <img src="assets/baixeGoogle.png" alt="google-play" />
-          </a>
-          <a href="#">
-            <img src="assets/baixeApple.png" alt="app-store" />
-          </a>
-        </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Sobre</a></li>
+        <li><a href="#travel">Nossas características</a></li>
+        <li><a href="#discover">Contato</a></li>
+        <li><a href="#client">Jornada de autoconhecimento</a></li>
+        <li><a href="#faq">Dúvidas frequentes</a></li>
+        <li><a href="home.php">Retornar para o início</a></li>
+      </ul>
+    </nav>
+    <div class="header__image">
+      <img src="assets/imagemCelular.png" alt="header" />
+    </div>
+    <div class="header__content">
+      <h1>Conheça nossa<br />empresa</h1>
+      <p class="section__description">
+        Trabalhamos de forma colaborativa para garantir que nossos clientes recebam o melhor tratamento e suporte
+        possível.
+      </p>
+      <div class="header__btns">
+        <a href="#">
+          <img src="assets/baixeGoogle.png" alt="google-play" />
+        </a>
+        <a href="#">
+          <img src="assets/baixeApple.png" alt="app-store" />
+        </a>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <section class="section__container travel__container" id="travel">
     <div class="travel__image">
@@ -244,7 +246,10 @@
         <li><a href="#client">Autoconhecimento</a></li>
         <li><a href="#faq">Dúvidas frequentes</a></li>
       </ul>
-    </div>
+      <div style="margin-top: 30px;">
+  <a href="home.php" class="btn voltar-home">Retornar para o início</a>
+</div>
+      </div>
     <div class="footer__bar">
       Copyright © 2024 Positive Mind.
     </div>

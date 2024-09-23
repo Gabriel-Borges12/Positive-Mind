@@ -14,36 +14,35 @@ $nome = $_SESSION['usuario_nome'];
 
 
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/motivacao.css">
+    <link rel="stylesheet" href="./css/motivacao-1.css">
     <script type="text/javascript" src="maotivacao.js"></script>
     <link rel="icon" href=" ./img/icone-cerebro.png">
     <title>Motivação</title>
 </head>
-<body>
-    <header class="navbar">
+
+<header class="navbar">
         <div class="estrutura-logo">
-        <a href="home.php">
-            <img src="img/logopadrao.png" alt="Logo" class="logo">
+            <a href="home.php">
+                <img src="img/logopadrao.png" alt="Logo" class="logo">
             </a>
             <!-- <span class="nome-empresa">POSITIVE MIND</span> -->
         </div>
-        <span class="nav-usuario">Bem-vindo (a), <?php echo $nome ?></span>
+        <span class="nav-usuario">Bem-vindo (a), <?php echo $_SESSION['usuario_nome']; ?></span>
 
         <a href="comunidade.php" class="nav-home">Quiz</a>
         <a href="sobreEmpresa.php" class="nav-home">Quem somos?</a>
         <a href="./logout.php" class="nav-home">Sair</a>
     </header>
-
     
-        <div id="endireitar">
-        <h1 class="frase-do-dia" id="frase-do-dia">Frase Motivadora:</h1>
+  <!-- Substituindo as frases motivadoras por um vídeo do YouTube -->
+  <div id="endireitar">
+        <h1 class="frase-do-dia" id="frase-do-dia">Vídeo Pitch:</h1>
     </div>
-     <div class="container">   <!-- Container para as frases -->
-        <div id="container-frases" class="container-frases"></div>
+    <div class="container">
+        <iframe width="1200" height="600" src="https://www.youtube.com/embed/Fs8Cv4e9TfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="custom-shape-divider-bottom-1683068753">
@@ -53,6 +52,7 @@ $nome = $_SESSION['usuario_nome'];
                 class="shape-fill"></path>
         </svg>
     </div>
+
 
     <footer class="main_footer container">
 
@@ -64,10 +64,10 @@ $nome = $_SESSION['usuario_nome'];
 
                 <ul>
 
-                    <li><a href="index.php" title="Página Inícial">Página Inícial</a></li>
-                    <li><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></li>
-                    <li><a href="comunidade.php" title="Comunidade">Comunidade</a></li>
-                    <li><a href="fale_conosco1.php" title="Fale Conosco">Fale Conosco</a></li>
+                    <p><a href="index.php" title="Página Inícial">Página Inícial</a></p>
+                    <p><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></p>
+                    <p><a href="comunidade.php" title="Comunidade">Comunidade</a></p>
+                    <p><a href="fale_conosco.php" title="Fale Conosco">Fale Conosco</a></p>
 
                 </ul>
 
@@ -86,7 +86,7 @@ $nome = $_SESSION['usuario_nome'];
 
                 <h4 class="titleFooter"> Redes Sociais</h4>
 
-                <a href="#" class="botao"><span> <i class="icon icon-facebook">Início</i> </span></a>
+
                 <a href="https://www.instagram.com/positive_mindbrasil?igsh=dTF5NHRxbzQ2cTYw" class="botao">Insta<span>
                         <i class="icon icon-instagram"></i> </span></a>
                 <a href="https://x.com/positivemindbr?s=21&t=NCfJWWvec0F2TialOt2tfg" class="botao">X<span> <i
@@ -108,6 +108,7 @@ $nome = $_SESSION['usuario_nome'];
 
         </div>
     </footer>
+
 
     <!-- JavaScript para exibir frases -->
     <script>

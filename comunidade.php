@@ -73,6 +73,14 @@ $nome = $_SESSION['usuario_nome'];
 
 
 
+    <div class="custom-shape-divider-bottom-1683068753">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+
     <footer class="main_footer container">
 
         <div class="content">
@@ -83,10 +91,10 @@ $nome = $_SESSION['usuario_nome'];
 
                 <ul>
 
-                    <li><a href="index.php" title="Página Inícial">Página Inícial</a></li>
-                    <li><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></li>
-                    <li><a href="comunidade.php" title="Comunidade">Comunidade</a></li>
-                    <li><a href="fale_conosco.php" title="Fale Conosco">Fale Conosco</a></li>
+                    <p><a href="index.php" title="Página Inícial">Página Inícial</a></p>
+                    <p><a href="img/Termos.pdf" title="Termos de Uso" target="_blank">Termos de uso</a></p>
+                    <p><a href="comunidade.php" title="Comunidade">Comunidade</a></p>
+                    <p><a href="fale_conosco.php" title="Fale Conosco">Fale Conosco</a></p>
 
                 </ul>
 
@@ -105,7 +113,7 @@ $nome = $_SESSION['usuario_nome'];
 
                 <h4 class="titleFooter"> Redes Sociais</h4>
 
-                <a href="#" class="botao"><span> <i class="icon icon-facebook">Início</i> </span></a>
+
                 <a href="https://www.instagram.com/positive_mindbrasil?igsh=dTF5NHRxbzQ2cTYw" class="botao">Insta<span>
                         <i class="icon icon-instagram"></i> </span></a>
                 <a href="https://x.com/positivemindbr?s=21&t=NCfJWWvec0F2TialOt2tfg" class="botao">X<span> <i
@@ -127,6 +135,7 @@ $nome = $_SESSION['usuario_nome'];
 
         </div>
     </footer>
+
 </body>
 
 </html>

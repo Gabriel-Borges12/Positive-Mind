@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
 }
+
 
 a {
     text-decoration: none;
@@ -13,6 +15,7 @@ a {
     display: flex;
     align-items: center;
     padding: 0 20px;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .navbar {
@@ -61,6 +64,7 @@ a {
     align-items: center;
     text-align: center;
 }
+
 .frase-do-dia {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px; /* Reduzindo um pouco o tamanho da fonte */
@@ -69,6 +73,36 @@ a {
     margin-top: 50px;
     /* text-decoration:underline; */
 }
+
+.main_footer {
+    display: flex;
+    flex-direction: column; /* Alinhar as colunas em uma única coluna */
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+    padding: 20px; /* Ajuste o padding conforme necessário */
+}
+
+.colfooter {
+    margin-bottom: 20px; /* Espaçamento entre as colunas */
+}
+
+.colfooter h4 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.colfooter ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.colfooter p, .colfooter a {
+    margin: 0; /* Remove a margem padrão */
+    text-align: left; /* Garante que o texto fique à esquerda */
+}
+
+.main_footer_copy {
+    text-align: left; /* Alinha o texto da copyright à esquerda */
+}
+
 
 
 /* Responsivo - Ajuste de margem para dispositivos menores */

@@ -172,6 +172,8 @@ nav {
   animation: hide-nav 0.5s forwards;
 }
 
+
+
 @keyframes show-nav {
   0% {
     height: 0;
